@@ -4,25 +4,44 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Sentiment Analysis Engine",
+    title: "Weather Data Statistics",
     description:
-      "NLP-powered tool that analyzes customer feedback sentiment using Python and machine learning models to extract actionable business insights.",
-    tags: ["Python", "NLP", "scikit-learn"],
+      "Statistical analysis and visualization of weather datasets using R, exploring patterns and trends through data-driven approaches.",
+    tags: ["R", "Statistics", "Data Analysis"],
+    github: "https://github.com/bytelea/weather-data-statistics",
     color: "from-primary/20 to-transparent",
   },
   {
-    title: "Predictive Analytics Dashboard",
+    title: "Kittydoro",
     description:
-      "Interactive dashboard built to visualize and forecast trends using historical datasets with statistical modeling and data visualization libraries.",
-    tags: ["Python", "Data Viz", "Pandas"],
+      "A playful Pomodoro timer application built with JavaScript — combining productivity with a fun, cat-themed interface.",
+    tags: ["JavaScript", "Web App", "UI/UX"],
+    github: "https://github.com/bytelea/kittydoro",
     color: "from-primary/10 to-transparent",
   },
   {
-    title: "Web Analytics Platform",
+    title: "Data Cleaning & Processing",
     description:
-      "Full-stack web analytics solution with tracking, real-time reporting, and user behavior insights built during internship at ANAM Technologies.",
-    tags: ["JavaScript", "HTML/CSS", "Analytics"],
+      "Python-based data cleaning and processing pipeline developed as part of the DCP25 coursework, focusing on real-world data preparation techniques.",
+    tags: ["Python", "Data Cleaning", "Pandas"],
+    github: "https://github.com/bytelea/dcp25-assignment",
     color: "from-primary/15 to-transparent",
+  },
+  {
+    title: "Software Architecture",
+    description:
+      "Exploring software design patterns and architectural principles through practical Java implementations.",
+    tags: ["Java", "Design Patterns", "OOP"],
+    github: "https://github.com/bytelea/software-architecture",
+    color: "from-primary/10 to-transparent",
+  },
+  {
+    title: "GUI Application",
+    description:
+      "Desktop GUI application built using Microsoft Visual Basic, demonstrating interface design and event-driven programming.",
+    tags: ["Visual Basic .NET", "GUI", "Desktop"],
+    github: "https://github.com/bytelea/gui",
+    color: "from-primary/20 to-transparent",
   },
 ];
 
@@ -73,10 +92,14 @@ const ProjectsSection = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="flex gap-3 text-muted-foreground">
-                    <Github size={18} className="hover:text-foreground cursor-pointer transition-colors" />
-                    <ExternalLink size={18} className="hover:text-foreground cursor-pointer transition-colors" />
-                  </div>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0"
+                  >
+                    <Github size={18} className="text-muted-foreground hover:text-foreground cursor-pointer transition-colors" />
+                  </a>
                 </div>
               </div>
             </motion.div>
