@@ -12,14 +12,6 @@ const projects = [
     color: "from-primary/20 to-transparent",
   },
   {
-    title: "Kittydoro",
-    description:
-      "A playful Pomodoro timer application built with JavaScript — combining productivity with a fun, cat-themed interface.",
-    tags: ["JavaScript", "Web App", "UI/UX"],
-    github: "https://github.com/bytelea/kittydoro",
-    color: "from-primary/10 to-transparent",
-  },
-  {
     title: "Data Cleaning & Processing",
     description:
       "Python-based data cleaning and processing pipeline developed as part of the DCP25 coursework, focusing on real-world data preparation techniques.",
@@ -105,6 +97,39 @@ const ProjectsSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          className="mt-12"
+        >
+          <div className="border border-border rounded-2xl p-8 sm:p-10 bg-gradient-to-br from-primary/15 to-transparent">
+            <h3 className="font-display text-xl sm:text-2xl font-semibold mb-3">
+              ProCare Redesign Prototype
+            </h3>
+            <p className="text-muted-foreground text-sm leading-relaxed max-w-xl mb-6">
+              A UI/UX redesign prototype for ProCare, crafted in Figma with a focus on modern healthcare interface design.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-6">
+              {["Figma", "UI/UX", "Prototyping"].map((tag) => (
+                <span
+                  key={tag}
+                  className="text-xs px-3 py-1 bg-secondary rounded-full text-muted-foreground"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <div className="w-full aspect-video rounded-xl overflow-hidden border border-border">
+              <iframe
+                className="w-full h-full"
+                src="https://embed.figma.com/design/To9refeNYbyaLhnTiooWJH/ProCare-Redesign-Prototype?node-id=0-1&embed-host=share"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
