@@ -4,12 +4,6 @@ import { Mail, Linkedin, Github, ArrowUpRight } from "lucide-react";
 
 const links = [
   {
-    label: "Email",
-    href: "mailto:lea@example.com",
-    icon: Mail,
-    value: "lea@example.com",
-  },
-  {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/lea-stanisavljevic/",
     icon: Linkedin,
@@ -17,9 +11,9 @@ const links = [
   },
   {
     label: "GitHub",
-    href: "https://github.com/lea-stanisavljevic",
+    href: "https://github.com/bytelea",
     icon: Github,
-    value: "github.com/lea-stanisavljevic",
+    value: "github.com/bytelea",
   },
 ];
 
