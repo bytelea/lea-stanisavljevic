@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lea Stanisavljević — Data Science & AI</title>
+  <meta name="description" content="Portfolio of Lea Stanisavljević — Data Science and AI student at TU Dublin." />
+  <meta name="author" content="Lea Stanisavljević" />
+  <meta property="og:title" content="Lea Stanisavljević — Data Science & AI" />
+  <meta property="og:description" content="Portfolio of Lea Stanisavljević — Data Science and AI student at TU Dublin." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="canonical" href="https://leastan.com/" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Lea Stanisavljević</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content fade-in">
+      <p class="hero-label">Data Science & AI</p>
+      <h1 class="hero-title">Lea<br><span class="text-gradient">Stanisavljević</span></h1>
+      <p class="hero-subtitle">Exploring the intersection of data, design, and intelligent systems. Currently studying at TU Dublin.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid fade-in-up">
+        <div>
+          <p class="section-label">About</p>
+          <h2 class="section-title">Building with<br><span class="text-muted">data & curiosity</span></h2>
+        </div>
+        <div class="about-text">
+          <p>I'm Lea — a Data Science and AI student at TU Dublin with a strong foundation in web development, digital marketing, and design. I'm passionate about turning raw data into meaningful insights and building intelligent systems.</p>
+          <p>Having interned at ANAM Technologies (Infobip), I bring real-world experience in problem-solving and collaboration. I excel at bridging the gap between technical analysis and creative communication.</p>
+        </div>
+      </div>
+      <div class="skills-section fade-in-up">
+        <p class="skills-label">Skills & Tools</p>
+        <div class="skills-grid">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Data Analysis</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Web Analytics</span>
+          <span class="skill-tag">Digital Marketing</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Data Visualization</span>
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="fade-in-up">
+        <p class="section-label">Work</p>
+        <h2 class="section-title" style="margin-bottom: 3rem;">Selected Projects</h2>
+      </div>
+
+      <div class="projects-list">
+        <div class="project-card fade-in-up" style="--gradient-opacity: 0.2">
+          <div class="project-inner">
+            <div class="project-info">
+              <h3 class="project-title">Weather Data Statistics</h3>
+              <p class="project-desc">Statistical analysis and visualization of weather datasets using R, exploring patterns and trends through data-driven approaches.</p>
+              <div class="project-tags">
+                <span class="tag">R</span>
+                <span class="tag">Statistics</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+            </div>
+            <a href="https://github.com/bytelea/weather-data-statistics" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in-up" style="--gradient-opacity: 0.15">
+          <div class="project-inner">
+            <div class="project-info">
+              <h3 class="project-title">Data Cleaning & Processing</h3>
+              <p class="project-desc">Python-based data cleaning and processing pipeline developed as part of the DCP25 coursework, focusing on real-world data preparation techniques.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Data Cleaning</span>
+                <span class="tag">Pandas</span>
+              </div>
+            </div>
+            <a href="https://github.com/bytelea/dcp25-assignment" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in-up" style="--gradient-opacity: 0.1">
+          <div class="project-inner">
+            <div class="project-info">
+              <h3 class="project-title">Software Architecture</h3>
+              <p class="project-desc">Exploring software design patterns and architectural principles through practical Java implementations.</p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Design Patterns</span>
+                <span class="tag">OOP</span>
+              </div>
+            </div>
+            <a href="https://github.com/bytelea/software-architecture" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in-up" style="--gradient-opacity: 0.2">
+          <div class="project-inner">
+            <div class="project-info">
+              <h3 class="project-title">GUI Application</h3>
+              <p class="project-desc">Desktop GUI application built using Microsoft Visual Basic, demonstrating interface design and event-driven programming.</p>
+              <div class="project-tags">
+                <span class="tag">Visual Basic .NET</span>
+                <span class="tag">GUI</span>
+                <span class="tag">Desktop</span>
+              </div>
+            </div>
+            <a href="https://github.com/bytelea/gui" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ProCare Figma -->
+      <div class="project-card fade-in-up" style="--gradient-opacity: 0.15; margin-top: 3rem;">
+        <div class="project-info">
+          <h3 class="project-title">ProCare Redesign Prototype</h3>
+          <p class="project-desc">A UI/UX redesign prototype for ProCare, crafted in Figma with a focus on modern healthcare interface design.</p>
+          <div class="project-tags" style="margin-bottom: 1.5rem;">
+            <span class="tag">Figma</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Prototyping</span>
+          </div>
+          <div class="figma-embed">
+            <iframe src="https://embed.figma.com/design/To9refeNYbyaLhnTiooWJH/ProCare-Redesign-Prototype?node-id=0-1&embed-host=share" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-header fade-in-up">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Let's connect</h2>
+        <p class="contact-subtitle">Open to opportunities, collaborations, and conversations about data science and AI.</p>
+      </div>
+
+      <div class="contact-links fade-in-up">
+        <a href="https://www.linkedin.com/in/lea-stanisavljevic/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-card-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <p class="contact-value">linkedin.com/in/lea-stanisavljevic</p>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+        <a href="https://github.com/bytelea" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-card-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <p class="contact-value">github.com/bytelea</p>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>© 2026 Lea Stanisavljević</p>
+      <p>Built with purpose.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    function closeMenu() {
+      navLinks.classList.remove('open');
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+    }
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '-50px' });
+
+    document.querySelectorAll('.fade-in, .fade-in-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
