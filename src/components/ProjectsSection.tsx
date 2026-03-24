@@ -1,6 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Download } from "lucide-react";
+import hcdCover from "@/assets/hcd-cover.jpg";
+import analyticsCover from "@/assets/analytics-cover.jpg";
 
 const projects = [
   {
