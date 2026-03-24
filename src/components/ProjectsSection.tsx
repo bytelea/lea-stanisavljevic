@@ -4,6 +4,8 @@ import { ExternalLink, Github, Download } from "lucide-react";
 import hcdCover from "@/assets/hcd-cover.jpg";
 import analyticsCover from "@/assets/analytics-cover.jpg";
 import infobipCover from "@/assets/infobip-cover.jpg";
+import algorithmsCover from "@/assets/algorithms-cover.jpg";
+import statisticsCover from "@/assets/statistics-cover.jpg";
 
 const projects = [
   {
@@ -194,6 +196,32 @@ const ProjectsSection = () => {
               tags: ["Market Research", "UX Analysis", "Internship"],
               cover: infobipCover,
               pdf: "/files/Infobip_Competitor_Research.pdf",
+              btnLabel: "View Report",
+            },
+            {
+              title: "Algorithms & Data Structures",
+              description: "Implementing and comparing five sorting algorithms (bubble, insertion, selection, quick, merge sort), analysing execution time against theoretical time complexities using real datasets.",
+              highlights: [
+                "Five sorting algorithm implementations",
+                "Empirical vs theoretical complexity comparison",
+                "CSV dataset benchmarking & analysis",
+              ],
+              tags: ["Python", "Algorithms", "Data Structures"],
+              cover: algorithmsCover,
+              pdf: "/files/Algorithms_Data_Structures_Report.pdf",
+              btnLabel: "View Report",
+            },
+            {
+              title: "Weather Data Statistics",
+              description: "Statistical analysis of historical weather data from the Athenry station using R. Covers rainfall probability, seasonal patterns, temperature trends, and time series forecasting.",
+              highlights: [
+                "Rainfall probability & seasonal analysis",
+                "Temperature trend comparison with moving averages",
+                "Time series forecasting with ARIMA",
+              ],
+              tags: ["R", "Statistics", "Data Visualization"],
+              cover: statisticsCover,
+              pdf: "/files/Statistics_Weather_Report.pdf",
               btnLabel: "View Report",
             },
           ].map((project, i) => (
