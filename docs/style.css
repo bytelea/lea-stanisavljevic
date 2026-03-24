@@ -412,7 +412,7 @@ a {
 
 .academic-cover {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 2/1;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
 }

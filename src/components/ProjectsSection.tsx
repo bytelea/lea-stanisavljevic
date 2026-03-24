@@ -160,9 +160,9 @@ const ProjectsSection = () => {
               title: "Improving UX in Glucose Monitoring Devices",
               description: "Human-Centred Design research project redesigning the ProCare Smart Health System. Includes user research surveys, persona development, empathy mapping, and a full UX redesign concept.",
               highlights: [
-                "📋 Primary & secondary user research",
-                "👤 Expanded personas & empathy maps",
-                "🔄 As-Is vs To-Be scenario analysis",
+                "Primary & secondary user research",
+                "Expanded personas & empathy maps",
+                "As-Is vs To-Be scenario analysis",
               ],
               tags: ["Human-Centred Design", "UX Research", "Healthcare"],
               cover: hcdCover,
@@ -173,9 +173,9 @@ const ProjectsSection = () => {
               title: "Analytics for Decision Making",
               description: "Classification modelling report predicting hydration habits using behavioural and lifestyle metrics. Built logistic regression and decision tree models with full evaluation using Orange and Python.",
               highlights: [
-                "📊 Logistic regression & decision trees",
-                "🧪 Model evaluation & confusion matrices",
-                "📈 Data preprocessing & feature analysis",
+                "Logistic regression & decision trees",
+                "Model evaluation & confusion matrices",
+                "Data preprocessing & feature analysis",
               ],
               tags: ["Machine Learning", "Python", "Data Analytics"],
               cover: analyticsCover,
@@ -190,7 +190,7 @@ const ProjectsSection = () => {
               transition={{ duration: 0.5, delay: 1.2 + i * 0.2 }}
             >
               <div className="group border border-border rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-transparent hover:border-primary/30 transition-all duration-300">
-                <div className="aspect-video overflow-hidden border-b border-border">
+                <div className="aspect-[2/1] overflow-hidden border-b border-border">
                   <img
                     src={project.cover}
                     alt={project.title}
