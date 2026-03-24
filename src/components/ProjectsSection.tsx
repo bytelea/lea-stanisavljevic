@@ -173,9 +173,9 @@ const ProjectsSection = () => {
               title: "Analytics for Decision Making",
               description: "Classification modelling report predicting hydration habits using behavioural and lifestyle metrics. Built logistic regression and decision tree models with full evaluation using Orange and Python.",
               highlights: [
-                "📊 Logistic regression & decision trees",
-                "🧪 Model evaluation & confusion matrices",
-                "📈 Data preprocessing & feature analysis",
+                "Logistic regression & decision trees",
+                "Model evaluation & confusion matrices",
+                "Data preprocessing & feature analysis",
               ],
               tags: ["Machine Learning", "Python", "Data Analytics"],
               cover: analyticsCover,
