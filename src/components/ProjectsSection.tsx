@@ -160,9 +160,9 @@ const ProjectsSection = () => {
               title: "Improving UX in Glucose Monitoring Devices",
               description: "Human-Centred Design research project redesigning the ProCare Smart Health System. Includes user research surveys, persona development, empathy mapping, and a full UX redesign concept.",
               highlights: [
-                "📋 Primary & secondary user research",
-                "👤 Expanded personas & empathy maps",
-                "🔄 As-Is vs To-Be scenario analysis",
+                "Primary & secondary user research",
+                "Expanded personas & empathy maps",
+                "As-Is vs To-Be scenario analysis",
               ],
               tags: ["Human-Centred Design", "UX Research", "Healthcare"],
               cover: hcdCover,
