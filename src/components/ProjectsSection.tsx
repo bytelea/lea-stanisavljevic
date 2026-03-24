@@ -1,6 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Download } from "lucide-react";
+import hcdCover from "@/assets/hcd-cover.jpg";
+import analyticsCover from "@/assets/analytics-cover.jpg";
 
 const projects = [
   {
@@ -138,6 +140,96 @@ const ProjectsSection = () => {
             </div>
           </div>
         </motion.div>
+
+        {/* Academic Research Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 1.0 }}
+          className="mt-20 mb-8"
+        >
+          <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4">Academic Research</p>
+          <h2 className="font-display text-4xl sm:text-5xl font-bold">
+            Reports & Presentations
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {[
+            {
+              title: "Improving UX in Glucose Monitoring Devices",
+              description: "Human-Centred Design research project redesigning the ProCare Smart Health System. Includes user research surveys, persona development, empathy mapping, and a full UX redesign concept.",
+              highlights: [
+                "📋 Primary & secondary user research",
+                "👤 Expanded personas & empathy maps",
+                "🔄 As-Is vs To-Be scenario analysis",
+              ],
+              tags: ["Human-Centred Design", "UX Research", "Healthcare"],
+              cover: hcdCover,
+              pdf: "/files/HCD_Presentation.pdf",
+              btnLabel: "View Presentation",
+            },
+            {
+              title: "Analytics for Decision Making",
+              description: "Classification modelling report predicting hydration habits using behavioural and lifestyle metrics. Built logistic regression and decision tree models with full evaluation using Orange and Python.",
+              highlights: [
+                "📊 Logistic regression & decision trees",
+                "🧪 Model evaluation & confusion matrices",
+                "📈 Data preprocessing & feature analysis",
+              ],
+              tags: ["Machine Learning", "Python", "Data Analytics"],
+              cover: analyticsCover,
+              pdf: "/files/Analytics_Report.pdf",
+              btnLabel: "View Report",
+            },
+          ].map((project, i) => (
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 1.2 + i * 0.2 }}
+            >
+              <div className="group border border-border rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-transparent hover:border-primary/30 transition-all duration-300">
+                <div className="aspect-video overflow-hidden border-b border-border">
+                  <img
+                    src={project.cover}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-400 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div className="p-6 sm:p-8">
+                  <h3 className="font-display text-xl sm:text-2xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-col gap-1.5 mb-4">
+                    {project.highlights.map((h) => (
+                      <span key={h} className="text-xs text-muted-foreground">{h}</span>
+                    ))}
+                  </div>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag) => (
+                      <span key={tag} className="text-xs px-3 py-1 bg-secondary rounded-full text-muted-foreground">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <a
+                    href={project.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium border border-border rounded-lg hover:border-primary/50 hover:bg-primary/10 transition-all"
+                  >
+                    <Download size={14} />
+                    {project.btnLabel}
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
