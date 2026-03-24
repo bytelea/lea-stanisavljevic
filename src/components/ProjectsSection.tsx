@@ -102,7 +102,7 @@ const ProjectsSection = () => {
                       ))}
                     </div>
                   </div>
-                  <Github size={18} className="flex-shrink-0 text-muted-foreground group-hover:text-foreground transition-colors" />
+                  <Github size={24} className="flex-shrink-0 text-primary group-hover:text-foreground transition-colors" />
                 </div>
               </a>
             </motion.div>
