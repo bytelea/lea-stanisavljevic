@@ -190,7 +190,7 @@ const ProjectsSection = () => {
               transition={{ duration: 0.5, delay: 1.2 + i * 0.2 }}
             >
               <div className="group border border-border rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-transparent hover:border-primary/30 transition-all duration-300">
-                <div className="aspect-video overflow-hidden border-b border-border">
+                <div className="aspect-[2/1] overflow-hidden border-b border-border">
                   <img
                     src={project.cover}
                     alt={project.title}
