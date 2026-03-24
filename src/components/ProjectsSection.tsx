@@ -77,7 +77,12 @@ const ProjectsSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.2 + i * 0.15 }}
             >
-              <div className={`group relative bg-gradient-to-br ${project.color} border border-border rounded-2xl p-8 sm:p-10 hover:border-primary/30 transition-all duration-300`}>
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group relative block bg-gradient-to-br ${project.color} border border-border rounded-2xl p-8 sm:p-10 hover:border-primary/30 transition-all duration-300`}
+              >
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                   <div className="flex-1">
                     <h3 className="font-display text-xl sm:text-2xl font-semibold mb-3 group-hover:text-primary transition-colors">
@@ -97,16 +102,9 @@ const ProjectsSection = () => {
                       ))}
                     </div>
                   </div>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-shrink-0"
-                  >
-                    <Github size={18} className="text-muted-foreground hover:text-foreground cursor-pointer transition-colors" />
-                  </a>
+                  <Github size={18} className="flex-shrink-0 text-muted-foreground group-hover:text-foreground transition-colors" />
                 </div>
-              </div>
+              </a>
             </motion.div>
           ))}
         </div>
