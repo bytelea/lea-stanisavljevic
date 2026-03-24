@@ -35,6 +35,14 @@ const projects = [
     github: "https://github.com/bytelea/gui",
     color: "from-primary/20 to-transparent",
   },
+  {
+    title: "Sorting Algorithms Analysis",
+    description:
+      "Performance analysis and comparison of sorting algorithms in Python, measuring execution time and efficiency across different data sizes.",
+    tags: ["Python", "Algorithms", "Performance Analysis"],
+    github: "https://github.com/bytelea/Sorting-Algorithms-Analysis-in-Python",
+    color: "from-primary/15 to-transparent",
+  },
 ];
 
 const ProjectsSection = () => {
