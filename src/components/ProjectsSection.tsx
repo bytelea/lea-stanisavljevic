@@ -215,7 +215,7 @@ const ProjectsSection = () => {
               highlights: [
                 "Rainfall probability & seasonal analysis",
                 "Temperature trend comparison with moving averages",
-                "Time series forecasting with ARIMA",
+                "Built and visualised in RStudio",
               ],
               tags: ["R", "Statistics", "Data Visualization"],
               cover: statisticsCover,
