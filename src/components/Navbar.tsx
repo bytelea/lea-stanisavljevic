@@ -20,7 +20,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#home" className="font-display text-lg font-bold tracking-tight">Lea Stanisavljević
+        <a href="#home" className="font-display text-lg font-bold tracking-tight">Lea Stan
 
         </a>
 
