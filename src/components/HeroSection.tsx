@@ -22,7 +22,7 @@ const HeroSection = () => {
           
           Lea
           <br />
-          <span className="text-gradient text-white">Stanisavljević</span>
+          <span className="text-gradient text-white">Stan</span>
         </motion.h1>
 
         <motion.p
