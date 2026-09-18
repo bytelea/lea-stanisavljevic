@@ -31,8 +31,8 @@ const HeroSection = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="text-muted-foreground text-lg max-w-lg mx-auto mb-12">
           
-          Exploring the intersection of data, design, and intelligent systems.
-          Currently studying at TU Dublin.
+          Data Science & AI student at TU Dublin, building with data, AI and a
+          lot of curiosity.
         </motion.p>
 
         <motion.div

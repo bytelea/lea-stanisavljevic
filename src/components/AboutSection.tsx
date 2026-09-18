@@ -3,10 +3,11 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const skills = [
-"Python", "Machine Learning", "Data Analysis", "SQL",
-"HTML/CSS", "JavaScript", "Web Analytics", "Digital Marketing",
-"Java", "Data Visualization", "Problem Solving", "AI",
-"Tableau", "Excel Spreadsheets", "MATLAB", "R", "Jira", "Kanban"];
+"Python", "SQL", "JavaScript", "R", "C++",
+"Pandas", "NumPy", "Data Analytics", "Data Visualisation",
+"Machine Learning", "Neural Networks", "FastAPI", "REST APIs",
+"Google Cloud", "Vertex AI / Gemini", "Supabase", "Git", "GitHub",
+"Tableau", "Excel", "Figma", "Canva"];
 
 
 const AboutSection = () => {
@@ -32,15 +33,18 @@ const AboutSection = () => {
           </div>
 
           <div className="space-y-6">
-            <p className="text-muted-foreground leading-relaxed">I'm Lea — a Data Science and AI student at TU Dublin with a strong foundation in web development, digital marketing, and design. I'm passionate about turning raw data into meaningful insights and building intelligent systems.
-
-
-
+            <p className="text-muted-foreground leading-relaxed">
+              I'm Lea, a Data Science &amp; AI student at TU Dublin who loves
+              learning, building things and finding the 'why' behind the numbers.
+              I'm especially interested in data analytics, AI and turning ideas
+              into useful products.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Having interned at ANAM Technologies (Infobip), I bring real-world
-              experience in problem-solving and collaboration. I excel at bridging
-              the gap between technical analysis and creative communication.
+              I'm currently part of the team at Trace, where I work across product
+              analytics and app operations, analysing user behaviour and product
+              performance to help inform product decisions. Outside of that, I
+              spend a lot of time building projects, experimenting with new
+              technologies and getting involved in the tech community.
             </p>
           </div>
         </motion.div>

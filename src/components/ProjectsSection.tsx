@@ -9,43 +9,43 @@ import statisticsCover from "@/assets/statistics-cover.jpg";
 
 const projects = [
   {
-    title: "Weather Data Statistics",
+    title: "Property Scan",
     description:
-      "Statistical analysis and visualization of weather datasets using R, exploring patterns and trends through data-driven approaches.",
-    tags: ["R", "Statistics", "Data Analysis"],
-    github: "https://github.com/bytelea/weather-data-statistics",
+      "AI-powered property due diligence assistant that cross-checks multiple property documents to uncover contradictions, missing evidence and potential risks for buyers. Built during the AI.WOMEN Hackathon 2026, where our team won 2nd place for Best Use of Google Cloud.",
+    tags: ["Python", "FastAPI", "Google Cloud", "Vertex AI / Gemini", "Anymize AI"],
+    github: "https://github.com/bytelea/property-due-diligence-assistant",
     color: "from-primary/20 to-transparent",
   },
   {
-    title: "Data Cleaning & Processing",
+    title: "Florist Studio",
     description:
-      "Python-based data cleaning and processing pipeline developed as part of the DCP25 coursework, focusing on real-world data preparation techniques.",
-    tags: ["Python", "Data Cleaning", "Pandas"],
-    github: "https://github.com/bytelea/dcp25-assignment",
+      "Full-stack Progressive Web App for independent florists to manage customers, orders, inventory, expenses, invoices and sales data, with authentication, cloud storage and cross-device synchronisation.",
+    tags: ["JavaScript", "SQL", "Supabase"],
+    github: "https://github.com/bytelea/floriststudio",
     color: "from-primary/15 to-transparent",
   },
   {
-    title: "Software Architecture",
+    title: "Movie Search Engine | Hash Map & Trie Analysis",
     description:
-      "Exploring software design patterns and architectural principles through practical Java implementations.",
-    tags: ["Java", "Design Patterns", "OOP"],
-    github: "https://github.com/bytelea/software-architecture",
+      "Python search engine built using Hash Map and Trie data structures implemented from scratch, supporting exact search, prefix search and autocomplete across 87,585 MovieLens records.",
+    tags: ["Python", "Data Structures", "Algorithms"],
+    github: "https://github.com/bytelea/Hash_Map_Trie_Analysis_in_Python",
     color: "from-primary/10 to-transparent",
-  },
-  {
-    title: "GUI Application",
-    description:
-      "Desktop GUI application built using Microsoft Visual Basic, demonstrating interface design and event-driven programming.",
-    tags: ["Visual Basic .NET", "GUI", "Desktop"],
-    github: "https://github.com/bytelea/gui",
-    color: "from-primary/20 to-transparent",
   },
   {
     title: "Sorting Algorithms Analysis",
     description:
-      "Performance analysis and comparison of sorting algorithms in Python, measuring execution time and efficiency across different data sizes.",
+      "Implemented and benchmarked Bubble, Insertion, Selection, Quick and Merge Sort from scratch in Python, comparing performance across datasets ranging from 250 to 64,000 records.",
     tags: ["Python", "Algorithms", "Performance Analysis"],
     github: "https://github.com/bytelea/Sorting-Algorithms-Analysis-in-Python",
+    color: "from-primary/20 to-transparent",
+  },
+  {
+    title: "Weather Data Statistics",
+    description:
+      "Statistical analysis and visualisation of weather data in R, exploring rainfall and temperature patterns through statistical summaries and visualisations.",
+    tags: ["R", "Statistics", "Data Visualisation"],
+    github: "https://github.com/bytelea/weather-data-statistics",
     color: "from-primary/15 to-transparent",
   },
 ];
@@ -184,7 +184,7 @@ const ProjectsSection = () => {
               btnLabel: "View Report",
             },
             {
-              title: "Competitor Research — Infobip",
+              title: "Competitor Research | Infobip",
               description: "Comprehensive competitor analysis for Infobip (ANAM Technologies), evaluating Twilio, Plivo, and Whispir across usability heuristics, communication channels, and web design strategies.",
               highlights: [
                 "Usability heuristics evaluation",
