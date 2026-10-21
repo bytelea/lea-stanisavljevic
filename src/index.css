@@ -143,14 +143,16 @@
 
 @media (max-width: 800px) {
   .experience-grid { grid-template-columns: 1fr; gap: 30px; }
-  .upto-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .archive-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .archive-card-featured { grid-column: span 2; grid-row: auto; }
   .case-features ul { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .experience-section { padding-top: 55px; padding-bottom: 55px; }
   .upto-section { padding-bottom: 55px; }
-  .upto-grid { grid-template-columns: 1fr; }
-  .upto-card { transform: none !important; }
+  .archive-grid { grid-template-columns: 1fr; }
+  .archive-card-featured { grid-column: auto; }
+  .archive-card-featured .archive-title { font-size: 24px; }
   .up-next-body h3 { font-size: 25px; }
   .up-next-meta { align-items: flex-start; }
   .experience-head { flex-direction: column; gap: 4px; }
