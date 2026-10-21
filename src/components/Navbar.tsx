@@ -1,79 +1,11 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
-
-const navItems = [
-{ label: "Home", href: "#home" },
-{ label: "About", href: "#about" },
-{ label: "Projects", href: "#projects" },
-{ label: "Contact", href: "#contact" }];
-
-
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <motion.nav
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
-      
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#home" className="font-display text-lg font-bold tracking-tight">Lea Stan
-
-        </a>
-
-        {/* Desktop */}
-        <ul className="hidden md:flex items-center gap-8">
-          {navItems.map((item) =>
-          <li key={item.href}>
-              <a
-              href={item.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200">
-              
-                {item.label}
-              </a>
-            </li>
-          )}
-        </ul>
-
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-foreground">
-          
-          {isOpen ? <X size={20} /> : <Menu size={20} />}
-        </button>
-      </div>
-
-      {/* Mobile menu */}
-      <AnimatePresence>
-        {isOpen &&
-        <motion.div
-          initial={{ height: 0, opacity: 0 }}
-          animate={{ height: "auto", opacity: 1 }}
-          exit={{ height: 0, opacity: 0 }}
-          className="md:hidden overflow-hidden bg-background border-b border-border">
-          
-            <ul className="px-6 py-4 space-y-3">
-              {navItems.map((item) =>
-            <li key={item.href}>
-                  <a
-                href={item.href}
-                onClick={() => setIsOpen(false)}
-                className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
-                
-                    {item.label}
-                  </a>
-                </li>
-            )}
-            </ul>
-          </motion.div>
-        }
-      </AnimatePresence>
-    </motion.nav>);
-
-};
-
-export default Navbar;
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Menu, X, Command } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { ThemeSwitcher, TerminalButton, usePortfolio } from '@/components/portfolio/PortfolioProvider';
+const navItems = ['Home', 'Projects', 'About', 'Contact'];
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+  const { openCommands } = usePortfolio();
+  return <header className="portfolio-header"><nav className="page-width nav-inner" aria-label="Main navigation"><Link to="/" className="brand handwritten">Lea Stan<span className="brand-star">✧</span></Link><div className="desktop-nav">{navItems.map(item => <Button key={item} asChild variant="link"><Link to={`/#${item.toLowerCase()}`}>{item}</Link></Button>)}</div><div className="nav-tools"><ThemeSwitcher /><Button variant="ghost" size="icon" onClick={openCommands} aria-label="Open command menu" title="Explore · Ctrl/⌘ K"><Command size={16} /></Button><div className="nav-terminal"><TerminalButton compact /></div><Button className="mobile-menu-toggle" variant="ghost" size="icon" aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button></div></nav>{open && <div className="mobile-nav">{navItems.map(item => <Button key={item} asChild variant="ghost"><Link to={`/#${item.toLowerCase()}`} onClick={() => setOpen(false)}>{item}</Link></Button>)}<TerminalButton compact /></div>}</header>;
+}
