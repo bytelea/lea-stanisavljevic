@@ -60,3 +60,7 @@
 - [x] Use Lea Stanisavljevic in signature-style handwriting at the top left
 - [x] Reframe Notion workshop photo to keep both heads visible
 - [x] Verify desktop and mobile framing: 1280px, 855px and 390px checked, no overflow or page errors, build OK
+
+## Notion workshop crop + GitHub push (22 Oct)
+- [x] Lower the Get Your Semester Together with Notion card photo slightly, keeping both people in frame
+- [ ] Push the current changes to GitHub (Lovable sync pushes the synced branch automatically)
