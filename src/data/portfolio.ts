@@ -142,8 +142,24 @@ export const education = [
 ];
 
 export const leadership = [
-  { title: 'Notion Campus Leader', period: 'July 2026 – Present', note: 'Leading student technology initiatives at TU Dublin, including organising a Dublin AI Week hackathon for approximately 100 participants.' },
-  { title: 'Hackathon Hub Ambassador', period: 'August 2026 – Present', note: 'Promoting hackathons and technology events to students across Ireland, connecting university communities with opportunities to build.' },
+  {
+    title: 'Notion Campus Leader', period: 'July 2026 – Present',
+    note: 'Leading student technology initiatives at TU Dublin.',
+    points: [
+      'Organise and run student technology events and initiatives on campus.',
+      'Ran a Notion hackathon at TU Dublin, from planning through to the day itself.',
+      'Hosted the "Get Your Semester Together with Notion" workshop for students.',
+      'Helped organise a Dublin AI Week hackathon for approximately 100 participants.',
+    ],
+  },
+  {
+    title: 'Hackathon Hub Ambassador', period: 'August 2026 – Present',
+    note: 'Promoting hackathons and technology events to students across Ireland.',
+    points: [
+      'Connect university communities with opportunities to build and collaborate.',
+      'Share hackathons, workshops and innovation programmes with students who have not been to one before.',
+    ],
+  },
 ];
 
 export type HighlightCategory = 'Hackathons' | 'Community' | 'Building' | 'Learning' | 'Next Chapter';

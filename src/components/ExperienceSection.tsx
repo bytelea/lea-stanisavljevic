@@ -35,6 +35,7 @@ export default function ExperienceSection() {
         <div className="experience-grid">
           <div className="experience-column">
             <p className="eyebrow experience-kicker">PREVIOUS EXPERIENCE</p>
+            <p className="column-note">Two roles where analytics met execution: understand what is happening, then change something about it.</p>
             {experience.map((job) =>
             <article key={job.organisation} className="experience-item">
                 <div className="experience-head">
@@ -50,25 +51,36 @@ export default function ExperienceSection() {
           </div>
 
           <div className="experience-column">
-            <p className="eyebrow experience-kicker">EDUCATION</p>
-            {education.map((entry) =>
-            <article key={entry.title} className="experience-item compact">
-                <div className="experience-head">
-                  <h3><GraduationCap size={17} className="experience-icon" />{entry.title}</h3>
-                  <span className="experience-period">{entry.period}</span>
-                </div>
-                <p className="experience-role">{entry.place}</p>
-              </article>
-            )}
-
-            <p className="eyebrow experience-kicker leadership-kicker">LEADERSHIP & COMMUNITY</p>
+            <p className="eyebrow experience-kicker">LEADERSHIP & COMMUNITY</p>
+            <p className="column-note">Student-facing roles with one aim: get more people into a room to build something.</p>
             {leadership.map((entry) =>
-            <article key={entry.title} className="experience-item compact">
+            <article key={entry.title} className="experience-item">
                 <div className="experience-head">
                   <h3>{entry.title}</h3>
                   <span className="experience-period">{entry.period}</span>
                 </div>
                 <p className="experience-role">{entry.note}</p>
+                <ul>
+                  {entry.points.map((point) => <li key={point}>{point}</li>)}
+                </ul>
+              </article>
+            )}
+          </div>
+        </div>
+
+        <div className="education-band">
+          <div className="education-head">
+            <p className="eyebrow experience-kicker">EDUCATION</p>
+            <p className="column-note">A path through interactive design, software engineering and now data science & AI.</p>
+          </div>
+          <div className="education-row">
+            {education.map((entry) =>
+            <article key={entry.title} className="experience-item compact education-card">
+                <div className="experience-head">
+                  <h3><GraduationCap size={17} className="experience-icon" />{entry.title}</h3>
+                  <span className="experience-period">{entry.period}</span>
+                </div>
+                <p className="experience-role">{entry.place}</p>
               </article>
             )}
           </div>
