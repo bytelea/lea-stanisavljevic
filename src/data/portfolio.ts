@@ -174,7 +174,7 @@ export type HighlightCategory = 'Hackathons' | 'Community' | 'Building' | 'Learn
 export type Highlight = {
   category: HighlightCategory; date?: string; title: string; note: string;
   detail?: string; images?: string[]; imageAlt?: string; projectSlug?: string;
-  imagePosition?: string; imageZoom?: number;
+  imagePosition?: string; imageZoom?: number; post?: string;
 };
 
 export const highlights: Highlight[] = [
@@ -212,6 +212,8 @@ export const highlights: Highlight[] = [
     category: 'Community', date: '2026 – Present', title: 'Hackathon Hub Ambassador',
     note: 'Promoting hackathons, student innovation and opportunities for university students to collaborate and build.',
     detail: 'As a Hackathon Hub Ambassador I help students discover hackathons and opportunities to collaborate, connecting university communities across Ireland with chances to build.',
+    images: [assetUrl(hackathonHub)],
+    imageAlt: 'A Hackathon Hub ambassador card naming Lea Stan as ambassador for Dublin',
   },
   {
     category: 'Building', date: '2026', title: 'Crescend · Pressure Cooker 2026',
