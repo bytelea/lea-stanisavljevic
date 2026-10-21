@@ -24,7 +24,7 @@
 ## Archive photos + education (21 Oct)
 - [x] Notion workshop card crop raised so faces/board show
 - [x] AI.WOMEN card photo zoomed in slightly
-- [ ] Pure Accelerate London photo: awaiting upload from user
+- [x] Pure Accelerate London photo: added uploaded photo
 - [x] Education: add SETU BSc Computing in Interactive Digital Art & Design (2021-2023)
 
 ## Experience layout (21 Oct)
@@ -41,3 +41,11 @@
 - [x] Read the four LinkedIn posts for accurate captions
 - [x] Upload photos as CDN assets, wire into highlights, verify in browser
 - [x] Remove the SAP "Next Chapter" card from Beyond the Screen (kept in Experience)
+
+## About, education and archive adjustments (22 Oct)
+- [x] Bring About columns closer together and place education dates beneath course names
+- [x] Remove Florist Studio from the archive and Dublin AI Week's second photo
+- [x] Shift AI.WOMEN crop right and lower both Notion crops
+- [x] Link six verified LinkedIn posts to archive stories
+- [ ] Remaining post links: awaiting user URLs for AI.WOMEN, Notion Hackathon, Hackathon Hub Ambassador, Pressure Cooker and Pure Accelerate (and Learning & exploring if applicable)
+- [x] Verify layout and archive stories: desktop/mobile checked, six post links read back in dialogs, 13 tests passed, build OK
