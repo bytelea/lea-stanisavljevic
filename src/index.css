@@ -64,11 +64,11 @@
 @media (min-width: 641px) and (max-width: 1050px) { .reports-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* About polaroid + grouped skills */
-.about-polaroid { position: relative; width: min(270px, 80%); margin-top: 34px; padding: 10px 10px 12px; background: hsl(var(--paper)); box-shadow: var(--shadow-paper); transform: rotate(-4deg); transition: transform .35s; }
+.about-polaroid { position: relative; width: min(190px, 70%); margin-top: 34px; padding: 8px 8px 10px; background: hsl(var(--paper)); box-shadow: var(--shadow-paper); transform: rotate(-4deg); transition: transform .35s; }
 .about-polaroid:hover { transform: rotate(-1.5deg) translateY(-4px); }
-.about-polaroid img { width: 100%; aspect-ratio: 5/6; object-fit: cover; object-position: top; display: block; }
-.about-polaroid figcaption { font-size: 21px; text-align: center; margin-top: 8px; color: hsl(var(--muted-foreground)); }
-.about-tape { position: absolute; width: 72px; height: 24px; background: hsl(var(--tape) / .55); top: -10px; left: 50%; margin-left: -36px; transform: rotate(-6deg); pointer-events: none; }
+.about-polaroid img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: top; display: block; }
+.about-polaroid figcaption { font-size: 16px; text-align: center; margin-top: 6px; color: hsl(var(--muted-foreground)); }
+.about-tape { position: absolute; width: 56px; height: 18px; background: hsl(var(--tape) / .55); top: -8px; left: 50%; margin-left: -28px; transform: rotate(-6deg); pointer-events: none; }
 .skill-groups { display: flex; flex-direction: column; gap: 22px; }
 .skill-group-label { font-size: 10px; text-transform: uppercase; letter-spacing: .12em; color: hsl(var(--primary)); margin-bottom: 10px; }
 
@@ -97,23 +97,37 @@
 
 /* What I've been up to */
 .upto-section { padding-top: 10px; padding-bottom: 85px; }
-.upto-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
-.upto-card-link { text-decoration: none; color: inherit; display: block; height: 100%; }
-.upto-card { height: 100%; background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: 7px; padding: 20px; box-shadow: var(--shadow-paper); transition: transform .3s, border-color .3s; }
-.upto-card-link:hover .upto-card, .upto-card:hover { transform: translateY(-4px) rotate(0deg) !important; border-color: hsl(var(--primary) / .45); }
-.upto-card-0 { transform: rotate(-1.2deg); }
-.upto-card-1 { transform: rotate(.8deg) translateY(10px); }
-.upto-card-2 { transform: rotate(-.6deg); }
-.upto-card-3 { transform: rotate(1.1deg); }
-.upto-card-4 { transform: rotate(-.9deg) translateY(8px); }
-.upto-card-5 { transform: rotate(.7deg); }
-.upto-card-6 { transform: rotate(-1deg) translateY(6px); border-color: hsl(var(--primary) / .4); background: hsl(var(--accent) / .35); }
-.upto-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; }
-.upto-label { display: inline-flex; align-items: center; gap: 6px; font-size: 9px; text-transform: uppercase; letter-spacing: .12em; color: hsl(var(--primary)); }
-.upto-date { font-size: 9px; color: hsl(var(--muted-foreground)); }
-.upto-card h3 { font-size: 22px; line-height: 1.15; margin-bottom: 8px; }
-.upto-card p { font-size: 11px; line-height: 1.7; color: hsl(var(--muted-foreground)); }
-.upto-link { display: inline-flex; align-items: center; gap: 5px; margin-top: 12px; font-size: 10px; color: hsl(var(--primary)); }
+.archive-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 26px 0 30px; }
+.archive-filter { font: inherit; font-size: 10px; text-transform: uppercase; letter-spacing: .12em; padding: 7px 14px; border-radius: 999px; border: 1px solid hsl(var(--border)); background: transparent; color: hsl(var(--muted-foreground)); cursor: pointer; transition: border-color .25s, color .25s, background .25s; }
+.archive-filter:hover { border-color: hsl(var(--primary) / .5); color: hsl(var(--foreground)); }
+.archive-filter.is-active { background: hsl(var(--primary)); border-color: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
+.archive-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: start; }
+.archive-card { font: inherit; text-align: left; display: flex; flex-direction: column; gap: 10px; background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: 7px; padding: 22px; box-shadow: var(--shadow-paper); cursor: pointer; transition: transform .3s, border-color .3s, box-shadow .3s; }
+.archive-card:hover, .archive-card:focus-visible { transform: translateY(-4px); border-color: hsl(var(--primary) / .45); box-shadow: 0 14px 34px -18px hsl(var(--primary) / .35); outline: none; }
+.archive-card-featured { grid-column: span 2; grid-row: span 2; padding: 28px; }
+.archive-card-future { border-color: hsl(var(--primary) / .4); background: hsl(var(--accent) / .35); }
+.archive-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.archive-label { display: inline-flex; align-items: center; gap: 6px; font-size: 9px; text-transform: uppercase; letter-spacing: .12em; color: hsl(var(--primary)); }
+.archive-date { font-size: 9px; color: hsl(var(--muted-foreground)); }
+.archive-title { font-family: var(--font-display, inherit); font-size: 22px; line-height: 1.15; }
+.archive-card-featured .archive-title { font-size: 30px; }
+.archive-note { font-size: 11px; line-height: 1.7; color: hsl(var(--muted-foreground)); }
+.archive-card-featured .archive-note { font-size: 12px; }
+.archive-more { display: inline-flex; align-items: center; gap: 5px; margin-top: auto; font-size: 10px; color: hsl(var(--primary)); }
+.archive-photo { display: block; border-radius: 5px; overflow: hidden; border: 1px solid hsl(var(--border)); }
+.archive-photo img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; }
+.archive-overlay { position: fixed; inset: 0; z-index: 80; display: flex; align-items: center; justify-content: center; padding: 24px; background: hsl(var(--background) / .72); backdrop-filter: blur(6px); }
+.archive-dialog { position: relative; width: min(560px, 100%); max-height: 82vh; overflow-y: auto; background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: 10px; padding: 30px; box-shadow: var(--shadow-paper); }
+.archive-dialog h3 { font-family: var(--font-display, inherit); font-size: 28px; line-height: 1.15; margin: 12px 0 14px; }
+.archive-dialog p { font-size: 13px; line-height: 1.8; color: hsl(var(--muted-foreground)); }
+.archive-photo-dialog { margin: 6px 0 16px; }
+.archive-close { position: absolute; top: 14px; right: 14px; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 999px; border: 1px solid hsl(var(--border)); background: hsl(var(--card)); color: hsl(var(--muted-foreground)); cursor: pointer; transition: color .25s, border-color .25s; }
+.archive-close:hover { color: hsl(var(--foreground)); border-color: hsl(var(--primary) / .5); }
+.archive-case-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; font-size: 11px; color: hsl(var(--primary)); text-decoration: none; }
+.archive-case-link:hover { text-decoration: underline; }
+@media (prefers-reduced-motion: reduce) {
+  .archive-card, .archive-filter, .archive-close { transition: none; }
+}
 
 /* Case study additions */
 .case-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
@@ -129,14 +143,16 @@
 
 @media (max-width: 800px) {
   .experience-grid { grid-template-columns: 1fr; gap: 30px; }
-  .upto-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .archive-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .archive-card-featured { grid-column: span 2; grid-row: auto; }
   .case-features ul { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .experience-section { padding-top: 55px; padding-bottom: 55px; }
   .upto-section { padding-bottom: 55px; }
-  .upto-grid { grid-template-columns: 1fr; }
-  .upto-card { transform: none !important; }
+  .archive-grid { grid-template-columns: 1fr; }
+  .archive-card-featured { grid-column: auto; }
+  .archive-card-featured .archive-title { font-size: 24px; }
   .up-next-body h3 { font-size: 25px; }
   .up-next-meta { align-items: flex-start; }
   .experience-head { flex-direction: column; gap: 4px; }
