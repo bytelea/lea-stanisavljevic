@@ -64,7 +64,8 @@
 @media (min-width: 641px) and (max-width: 1050px) { .reports-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* About polaroid + grouped skills */
-.about-polaroid { position: relative; width: min(190px, 70%); margin-top: 34px; padding: 8px 8px 10px; background: hsl(var(--paper)); box-shadow: var(--shadow-paper); transform: rotate(-4deg); transition: transform .35s; }
+.about-photo-col { display: flex; align-items: flex-start; justify-content: center; }
+.about-polaroid { position: relative; width: min(300px, 85%); padding: 10px 10px 12px; background: hsl(var(--paper)); box-shadow: var(--shadow-paper); transform: rotate(-4deg); transition: transform .35s; }
 .about-polaroid:hover { transform: rotate(-1.5deg) translateY(-4px); }
 .about-polaroid img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: top; display: block; }
 .about-polaroid figcaption { font-size: 16px; text-align: center; margin-top: 6px; color: hsl(var(--muted-foreground)); }
