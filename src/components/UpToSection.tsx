@@ -76,7 +76,15 @@ export default function UpToSection() {
                 aria-haspopup="dialog">
                 {highlight.images && highlight.images.length > 0 && (
                   <span className="archive-photo">
-                    <img src={highlight.images[0]} alt={highlight.imageAlt ?? ''} loading="lazy" />
+                    <img
+                      src={highlight.images[0]}
+                      alt={highlight.imageAlt ?? ''}
+                      loading="lazy"
+                      style={{
+                        objectPosition: highlight.imagePosition ?? 'center',
+                        transformOrigin: highlight.imagePosition ?? 'center',
+                        transform: highlight.imageZoom ? `scale(${highlight.imageZoom})` : undefined,
+                      }} />
                   </span>
                 )}
                 <span className="archive-top">
@@ -122,7 +130,15 @@ export default function UpToSection() {
                 <span className={`archive-photos${open.images.length > 1 ? ' archive-photos-multi' : ''}`}>
                   {open.images.map((src, i) => (
                     <span key={src} className="archive-photo">
-                      <img src={src} alt={i === 0 ? open.imageAlt ?? '' : ''} loading="lazy" />
+                      <img
+                        src={src}
+                        alt={i === 0 ? open.imageAlt ?? '' : ''}
+                        loading="lazy"
+                        style={i === 0 ? {
+                          objectPosition: open.imagePosition ?? 'center',
+                          transformOrigin: open.imagePosition ?? 'center',
+                          transform: open.imageZoom ? `scale(${open.imageZoom})` : undefined,
+                        } : undefined} />
                     </span>
                   ))}
                 </span>
