@@ -26,3 +26,10 @@
 - [x] AI.WOMEN card photo zoomed in slightly
 - [ ] Pure Accelerate London photo: awaiting upload from user
 - [x] Education: add SETU BSc Computing in Interactive Digital Art & Design (2021-2023)
+
+## Experience layout (21 Oct)
+- [x] Previous Experience and Leadership & Community side by side, divided columns
+- [x] Leadership entries expanded into bullet points matching the experience cards
+- [x] Education moved to a full-width three-column band below the two columns
+- [x] Handwritten closing note + link from the community column to Beyond the Screen
+- [x] Verify in browser (desktop + mobile, light + dark), refresh docs copy
