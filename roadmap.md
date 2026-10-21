@@ -33,3 +33,10 @@
 - [x] Education moved to a full-width three-column band below the two columns
 - [x] Handwritten closing note + link from the community column to Beyond the Screen
 - [x] Verify in browser (desktop + mobile, light + dark), refresh docs copy
+
+## Beyond the Screen: new event photos (21 Oct)
+- [ ] Identify the six uploaded photos and map them to events
+- [ ] Pure Accelerate London card: add its photo
+- [ ] New cards: ESPC Conference 2025, Amazon cloud computing session, Women Who Build with Giveago, Dublin Tech Summit
+- [ ] Read the four LinkedIn posts for accurate captions
+- [ ] Upload photos as CDN assets, wire into highlights, verify in browser
