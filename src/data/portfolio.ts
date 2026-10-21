@@ -184,6 +184,7 @@ export const highlights: Highlight[] = [
     images: [assetUrl(aiwomenHackathon)], imageAlt: 'The PropertyScan team on stage at the AI.WOMEN Hackathon 2026, receiving second place for Best Use of Google Cloud',
     imagePosition: '70% bottom', imageZoom: 1.34,
     projectSlug: 'propertyscan',
+    post: 'https://lnkd.in/p/did8F4UZ',
   },
   {
     category: 'Community', date: '2026', title: 'Notion Hackathon',

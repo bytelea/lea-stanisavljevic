@@ -46,6 +46,6 @@
 - [x] Bring About columns closer together and place education dates beneath course names
 - [x] Remove Florist Studio from the archive and Dublin AI Week's second photo
 - [x] Shift AI.WOMEN crop right and lower both Notion crops
-- [x] Link six verified LinkedIn posts to archive stories
-- [ ] Remaining post links: awaiting user URLs for AI.WOMEN, Notion Hackathon, Hackathon Hub Ambassador, Pressure Cooker and Pure Accelerate (and Learning & exploring if applicable)
+- [x] Link seven verified LinkedIn posts to archive stories, including the supplied AI.WOMEN post
+- [ ] Remaining post links: awaiting user URLs for Notion Hackathon, Hackathon Hub Ambassador, Pressure Cooker and Pure Accelerate (and Learning & exploring if applicable)
 - [x] Verify layout and archive stories: desktop/mobile checked, six post links read back in dialogs, 13 tests passed, build OK
