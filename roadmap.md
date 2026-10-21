@@ -51,7 +51,7 @@
 - [x] Verify layout and archive stories: desktop/mobile checked, six post links read back in dialogs, 13 tests passed, build OK
 
 ## Header and photo framing (22 Oct)
-- [ ] Lower terminal so the polaroid caption is fully visible
-- [ ] Use Lea Stanisavljevic in signature-style handwriting at the top left
-- [ ] Reframe Notion workshop photo to keep both heads visible
-- [ ] Verify desktop and mobile framing
+- [x] Lower terminal below the polaroid caption
+- [x] Use Lea Stanisavljevic in signature-style handwriting at the top left
+- [x] Reframe Notion workshop photo to keep both heads visible
+- [x] Verify desktop and mobile framing: 1280px, 855px and 390px checked, no overflow or page errors, build OK
