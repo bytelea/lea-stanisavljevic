@@ -13,7 +13,7 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="grid md:grid-cols-2 gap-16">
+          className="grid md:grid-cols-2 gap-16 items-start">
 
           <div className="about-photo-col">
             <figure className="about-polaroid">
