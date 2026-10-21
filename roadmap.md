@@ -49,3 +49,9 @@
 - [x] Link seven verified LinkedIn posts to archive stories, including the supplied AI.WOMEN post
 - [ ] Remaining post links: awaiting user URLs for Notion Hackathon, Hackathon Hub Ambassador, Pressure Cooker and Pure Accelerate (and Learning & exploring if applicable)
 - [x] Verify layout and archive stories: desktop/mobile checked, six post links read back in dialogs, 13 tests passed, build OK
+
+## Header and photo framing (22 Oct)
+- [ ] Lower terminal so the polaroid caption is fully visible
+- [ ] Use Lea Stanisavljevic in signature-style handwriting at the top left
+- [ ] Reframe Notion workshop photo to keep both heads visible
+- [ ] Verify desktop and mobile framing
