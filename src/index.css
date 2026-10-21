@@ -23,7 +23,6 @@
   :root[data-theme='dark'] {
     --background: 190 12% 9%; --foreground: 40 20% 92%; --card: 190 10% 12%; --card-foreground: 40 20% 92%; --popover: 190 10% 12%; --popover-foreground: 40 20% 92%; --primary: 260 60% 76%; --primary-foreground: 190 15% 10%; --secondary: 260 14% 20%; --secondary-foreground: 260 40% 88%; --muted: 190 10% 16%; --muted-foreground: 190 7% 67%; --accent: 260 18% 23%; --accent-foreground: 260 40% 88%; --border: 190 8% 23%; --input: 190 8% 23%; --ring: 260 60% 76%; --paper: 190 8% 16%; --tape: 190 8% 30%; --shadow-paper: 0 8px 30px hsl(0 0% 0% / .2); --shadow-terminal: 0 18px 38px hsl(0 0% 0% / .3);
   }
-  :root[data-theme='pastel'] { --background: 270 35% 97%; --card: 320 40% 99%; --secondary: 150 25% 92%; --accent: 265 60% 91%; --border: 265 22% 86%; --paper: 40 55% 99%; }
   * { @apply border-border; letter-spacing: 0; }
   body { @apply bg-background text-foreground antialiased; font-family: var(--font-body); margin: 0; }
   h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 400; }
