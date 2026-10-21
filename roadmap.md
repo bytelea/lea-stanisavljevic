@@ -52,7 +52,7 @@
 - [x] Remove Florist Studio from the archive and Dublin AI Week's second photo
 - [x] Shift AI.WOMEN crop right and lower both Notion crops
 - [x] Link seven verified LinkedIn posts to archive stories, including the supplied AI.WOMEN post
-- [ ] Remaining post links: awaiting user URLs for Notion Hackathon, Hackathon Hub Ambassador, Pressure Cooker and Pure Accelerate (and Learning & exploring if applicable)
+- [x] Remaining post links: all supplied card URLs added (Notion Hackathon, Notion workshop, Dublin AI Week, Hackathon Hub Ambassador, Pressure Cooker, Pure Accelerate) 22 Oct; tests/build/docs verified. Learning & exploring intentionally has no post link
 - [x] Verify layout and archive stories: desktop/mobile checked, six post links read back in dialogs, 13 tests passed, build OK
 
 ## Header and photo framing (22 Oct)

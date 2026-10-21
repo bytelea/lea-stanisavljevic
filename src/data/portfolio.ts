@@ -193,6 +193,7 @@ export const highlights: Highlight[] = [
     images: [assetUrl(notionHackathon)],
     imageAlt: 'Handing out Notion tote bags at the Notion hackathon at TU Dublin',
     imagePosition: 'center 65%',
+    post: 'https://lnkd.in/p/dHkWX6su',
   },
   {
     category: 'Community', date: '2026', title: 'Get Your Semester Together with Notion',
@@ -201,7 +202,7 @@ export const highlights: Highlight[] = [
     images: [assetUrl(notionWorkshop)],
     imageAlt: 'Presenting the Get Your Semester Together with Notion workshop at TU Dublin',
     imagePosition: 'center 10%',
-    post: 'https://www.linkedin.com/posts/lea-stanisavljevic_notion-notioncampusleaders-tudublin-activity-7511452978936090624-R1CM',
+    post: 'https://lnkd.in/p/dZwp4XwU',
   },
   {
     category: 'Community', date: '2026', title: 'Dublin AI Week',
@@ -209,7 +210,7 @@ export const highlights: Highlight[] = [
     detail: 'As a Notion Campus Leader I was involved in organising a Dublin AI Week hackathon that brought together approximately 100 participants to build with AI.',
     images: [assetUrl(pressureCookerCrowd)],
     imageAlt: 'A packed Dublin AI Week session with attendees wearing Dublin AI Week t-shirts',
-    post: 'https://www.linkedin.com/posts/lea-stanisavljevic_notionlovesdublin-dublinaiweek-hackathon-activity-7514674172241883136-Hv0G',
+    post: 'https://lnkd.in/p/dXDNNaRH',
   },
   {
     category: 'Community', date: '2026 – Present', title: 'Hackathon Hub Ambassador',
@@ -217,6 +218,7 @@ export const highlights: Highlight[] = [
     detail: 'As a Hackathon Hub Ambassador I help students discover hackathons and opportunities to collaborate, connecting university communities across Ireland with chances to build.',
     images: [assetUrl(hackathonHub)],
     imageAlt: 'A Hackathon Hub ambassador card naming Lea Stan as ambassador for Dublin',
+    post: 'https://lnkd.in/p/dPdvX7Hp',
   },
   {
     category: 'Building', date: '2026', title: 'Crescend · Pressure Cooker 2026',
@@ -224,6 +226,7 @@ export const highlights: Highlight[] = [
     detail: 'Developed as part of the Pressure Cooker 2026 experience in Dublin. I contributed to UX/UI design, interactive prototyping and collaborative product development. The landing page has attracted 108 waitlist sign-ups so far.',
     images: [assetUrl(pressureCookerTeam)],
     imageAlt: 'Working with the team during the Pressure Cooker 2026 experience in Dublin',
+    post: 'https://lnkd.in/p/d9prr7K3',
     projectSlug: 'crescend',
   },
   {
@@ -232,6 +235,7 @@ export const highlights: Highlight[] = [
     detail: 'Attended the Pure Accelerate conference in London, learning about data storage, cloud infrastructure and how enterprise technology is evolving.',
     images: [assetUrl(pureAccelerate)],
     imageAlt: 'A panel session at the Pure Accelerate conference in London',
+    post: 'https://lnkd.in/p/dCJjb-Xy',
   },
   {
     category: 'Learning', date: '2025', title: 'Dublin ESPC Conference 2025',
