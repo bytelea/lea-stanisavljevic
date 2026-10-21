@@ -160,7 +160,7 @@ export const highlights: Highlight[] = [
     note: 'Built the backend and AI pipeline for PropertyScan as part of a team, receiving second place for Best Use of Google Cloud.',
     detail: 'A team of five built PropertyScan, an AI-powered property due diligence tool, in a single hackathon. I focused on backend development and the AI pipeline: document extraction, evidence validation and the deterministic cross-document rule engine. The project took second place for Best Use of Google Cloud.',
     images: [assetUrl(aiwomenHackathon)], imageAlt: 'The PropertyScan team on stage at the AI.WOMEN Hackathon 2026, receiving second place for Best Use of Google Cloud',
-    imagePosition: 'center bottom', imageZoom: 1.18,
+    imagePosition: 'center bottom', imageZoom: 1.34,
     projectSlug: 'propertyscan',
   },
   {
