@@ -24,7 +24,7 @@
 ## Archive photos + education (21 Oct)
 - [x] Notion workshop card crop raised so faces/board show
 - [x] AI.WOMEN card photo zoomed in slightly
-- [ ] Pure Accelerate London photo: awaiting upload from user
+- [x] Pure Accelerate London photo: added uploaded photo
 - [x] Education: add SETU BSc Computing in Interactive Digital Art & Design (2021-2023)
 
 ## Experience layout (21 Oct)
@@ -41,3 +41,10 @@
 - [x] Read the four LinkedIn posts for accurate captions
 - [x] Upload photos as CDN assets, wire into highlights, verify in browser
 - [x] Remove the SAP "Next Chapter" card from Beyond the Screen (kept in Experience)
+
+## About, education and archive adjustments (22 Oct)
+- [ ] Bring About columns closer together and place education dates beneath course names
+- [ ] Remove Florist Studio from the archive and Dublin AI Week's second photo
+- [ ] Shift AI.WOMEN crop right and lower both Notion crops
+- [ ] Link verified LinkedIn posts to archive stories; request any unavailable post URLs
+- [ ] Verify layout and archive stories
