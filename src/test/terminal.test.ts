@@ -2,15 +2,14 @@ import { describe, it, expect } from 'vitest';
 import { runCommand } from '@/lib/terminal';
 import { featuredProjects } from '@/data/portfolio';
 describe('Portfolio interactions', () => {
-  it('supports all three requested themes', () => {
-    for (const theme of ['light', 'dark', 'pastel']) expect(runCommand(`theme ${theme}`).theme).toBe(theme);
+  it('supports light and dark themes only', () => {
+    for (const theme of ['light', 'dark']) expect(runCommand(`theme ${theme}`).theme).toBe(theme);
     expect(runCommand('theme invalid').theme).toBeUndefined();
   });
-  it('accepts theme names on their own, including pastel from the screenshot', () => {
-    expect(runCommand('pastel').theme).toBe('pastel');
-    expect(runCommand('light').theme).toBe('light');
-    expect(runCommand('dark').theme).toBe('dark');
-    expect(runCommand(' PASTEL ').theme).toBe('pastel');
+  it('no longer offers a pastel theme', () => {
+    expect(runCommand('pastel').theme).toBeUndefined();
+    expect(runCommand('theme pastel').text).toContain('light or dark');
+    expect(themes).not.toContain('pastel');
   });
   it('accepts the singular project command from the screenshot', () => {
     expect(runCommand('project')).toEqual(runCommand('projects'));

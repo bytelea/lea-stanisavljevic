@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Moon, Sun, Palette, TerminalSquare, ArrowUpRight, Search } from 'lucide-react';
+import { Moon, Sun, TerminalSquare, ArrowUpRight, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { themes, type PortfolioTheme } from '@/lib/terminal';
@@ -63,7 +63,7 @@ export function PortfolioProvider({ children }: { children: React.ReactNode }) {
 export function ThemeSwitcher() {
   const { theme, setTheme } = usePortfolio();
   return <div className="theme-switcher" aria-label="Colour theme">{themes.map((t, i) => {
-    const Icon = [Sun, Moon, Palette][i];
+    const Icon = [Sun, Moon][i];
     return <Button key={t} variant="ghost" size="icon" title={`${t} theme`} aria-label={`${t} theme`} aria-pressed={theme === t} onClick={() => setTheme(t)} className={theme === t ? 'theme-active' : ''}><Icon size={15} /></Button>;
   })}</div>;
 }
