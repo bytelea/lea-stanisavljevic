@@ -65,6 +65,11 @@ export default function ExperienceSection() {
                 </ul>
               </article>
             )}
+
+            <div className="column-closing">
+              <p className="handwritten closing-note">The photos and the stories behind these events live in Beyond the Screen. <span aria-hidden="true">↘</span></p>
+              <a className="closing-link" href="#upto">Browse the archive</a>
+            </div>
           </div>
         </div>
 

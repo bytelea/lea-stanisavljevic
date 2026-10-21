@@ -93,6 +93,9 @@
 .education-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 34px; }
 .education-card { border-top: 0; padding-top: 4px; padding-bottom: 8px; }
 .education-card h3 { font-size: 19px; align-items: flex-start; }
+.column-closing { border-top: 1px dashed hsl(var(--primary) / .45); margin-top: 26px; padding-top: 20px; }
+.closing-note { font-size: 21px; line-height: 1.45; color: hsl(var(--muted-foreground)); }
+.closing-link { display: inline-flex; align-items: center; margin-top: 13px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: hsl(var(--primary)); border-bottom: 1px solid hsl(var(--primary) / .45); padding-bottom: 3px; }
 .experience-item { border-top: 1px solid hsl(var(--border)); padding: 20px 0 24px; }
 .experience-item h3 { font-size: 24px; line-height: 1.15; display: flex; align-items: center; gap: 8px; }
 .experience-icon { color: hsl(var(--primary)); flex-shrink: 0; }

@@ -157,6 +157,7 @@ export const leadership = [
     note: 'Promoting hackathons and technology events to students across Ireland.',
     points: [
       'Connect university communities with opportunities to build and collaborate.',
+      'Help students find their first hackathon and get started with a team.',
       'Share hackathons, workshops and innovation programmes with students who have not been to one before.',
     ],
   },
