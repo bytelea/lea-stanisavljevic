@@ -35,7 +35,7 @@
 .portfolio-header { position: sticky; top: 0; z-index: 40; background: hsl(var(--background) / .94); backdrop-filter: blur(16px); }
 .nav-inner { display: flex; height: 88px; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid hsl(var(--border) / .6); }
 .brand { font-size: 31px; font-style: italic; line-height: 1.1; flex-shrink: 0; white-space: nowrap; display: flex; gap: 8px; align-items: center; }
-.brand-star { font-size: 18px; color: hsl(var(--primary)); }
+.brand-flower { display: inline-flex; align-items: center; color: hsl(var(--primary)); }.brand-flower svg { width: 17px; height: 17px; display: block; }
 .desktop-nav,.nav-tools { display: flex; align-items: center; }
 .desktop-nav { gap: 4px; }.desktop-nav a { color: hsl(var(--muted-foreground)); font-size: 12px; padding-inline: 12px; }.desktop-nav a:hover { color: hsl(var(--primary)); text-decoration: none; }
 .nav-tools { gap: 9px; }.theme-switcher { display: flex; }.theme-switcher button { height: 29px; width: 29px; border-radius: 50%; color: hsl(var(--muted-foreground)); }.theme-switcher .theme-active { background: hsl(var(--accent)); color: hsl(var(--primary)); }
@@ -179,4 +179,4 @@
 }
 
 @media (min-width: 641px) and (max-width: 950px) { .desktop-nav, .nav-terminal { display: none; } .mobile-menu-toggle { display: inline-flex; } .mobile-nav { display: flex; flex-direction: column; padding: 10px 32px 20px; border-bottom: 1px solid hsl(var(--border)); } .mobile-nav > a { justify-content: flex-start; } .mobile-nav .terminal-button { align-self: flex-start; } }
-@media (max-width: 640px) { .brand { font-size: 25px; gap: 4px; } .brand-star { font-size: 14px; } .nav-tools { gap: 0; } }
+@media (max-width: 640px) { .brand { font-size: 25px; gap: 4px; } .brand-flower svg { width: 13px; height: 13px; } .nav-tools { gap: 0; } }
