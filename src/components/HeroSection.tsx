@@ -1,73 +1,14 @@
-import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ArrowRight, Sparkles, Code2, Heart, Braces } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import { featuredProjects } from '@/data/portfolio';
+import Terminal from '@/components/portfolio/Terminal';
+import { TerminalButton } from '@/components/portfolio/PortfolioProvider';
 
-const HeroSection = () => {
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative px-6">
-      <div className="max-w-4xl mx-auto text-center">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6">
-          
-          Data Science & AI
-        </motion.p>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-8">
-          
-          Lea
-          <br />
-          <span className="text-gradient text-white">Stan</span>
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="text-muted-foreground text-lg max-w-lg mx-auto mb-12">
-          
-          Data Science & AI student at TU Dublin, building with data, AI and a
-          lot of curiosity.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="flex justify-center gap-4">
-          
-          <a
-            href="#projects"
-            className="px-6 py-3 text-primary-foreground font-medium text-sm rounded-lg hover:opacity-90 transition-opacity bg-secondary-foreground">
-            
-            View Projects
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 border border-border text-foreground font-medium text-sm rounded-lg hover:bg-secondary transition-colors">
-            
-            Get in Touch
-          </a>
-        </motion.div>
-      </div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2">
-        
-        <a href="#about">
-          <ArrowDown size={18} className="text-muted-foreground animate-bounce" />
-        </a>
-      </motion.div>
-    </section>);
-
-};
-
-export default HeroSection;
+export default function HeroSection() {
+  return <section id="home" className="portfolio-hero page-width">
+    <div className="hero-copy"><p className="eyebrow"><span className="tiny-star">✳</span> DATA SCIENCE · AI · HUMAN-CENTRED DESIGN</p><h1>Making technology<br className="desktop-break" /> feel a little<br /> more <em>human.</em></h1><p className="hero-description">I’m Lea Stan, a Data Science & AI student at TU Dublin, building with data, AI and a lot of curiosity.</p><div className="hero-actions"><Button asChild><Link to="/#projects">Explore my work <ArrowRight size={16} /></Link></Button><TerminalButton /></div><div className="hero-footnote"><span className="status-dot" /> Currently studying Data Science & AI at TU Dublin</div><div className="hero-footnote"><Braces size={12} /> Product analytics & app operations at Trace</div></div>
+    <div className="hero-composition"><Link to="/?project=propertyscan" className="polaroid"><img src={featuredProjects[0].image} alt="PropertyScan in a sunlit workspace" /><span className="handwritten">A little clarity, built with care.</span></Link><span className="paper-tape" aria-hidden="true" /><div className="handwritten hero-annotation">Building ideas for<br /> a brighter future <Heart size={16} /><span className="annotation-arrow" aria-hidden="true">↙</span></div><div className="interest-note"><span><Sparkles size={12} /> AI & curiosity</span><span><Heart size={12} /> Thoughtful design</span><span><Code2 size={12} /> Useful little things</span></div><div className="hero-terminal"><Terminal /></div><span className="composition-star" aria-hidden="true">✧</span></div>
+    <a href="#projects" className="scroll-note"><ArrowDown size={14} /><span>A little further down</span></a>
+  </section>;
+}
