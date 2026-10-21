@@ -62,5 +62,6 @@
 - [x] Verify desktop and mobile framing: 1280px, 855px and 390px checked, no overflow or page errors, build OK
 
 ## Notion workshop crop + GitHub push (22 Oct)
-- [x] Lower the Get Your Semester Together with Notion card photo slightly, keeping both people in frame
-- [ ] Push the current changes to GitHub (Lovable sync pushes the synced branch automatically)
+- [x] Lower the Get Your Semester Together with Notion card photo slightly, keeping both people in frame (crop center 10% -> 18%)
+- [x] Refresh and tidy the deployable docs copy; verified it renders with both heads visible and no failed requests
+- [x] Push changes to GitHub: work is committed on the synced branch and reaches the repository through Lovable's Git sync
