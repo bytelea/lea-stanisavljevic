@@ -10,6 +10,12 @@ import aiwomenHackathon from '@/assets/aiwomen-hackathon.png.asset.json';
 import pressureCookerTeam from '@/assets/pressure-cooker-team.png.asset.json';
 import pressureCookerCrowd from '@/assets/pressure-cooker-crowd.png.asset.json';
 import dublinAiWeek from '@/assets/dublin-ai-week.png.asset.json';
+import pureAccelerate from '@/assets/pure-accelerate-london.png.asset.json';
+import hackathonHub from '@/assets/hackathon-hub-ambassador.png.asset.json';
+import espcConference from '@/assets/espc-conference-2025.png.asset.json';
+import awsWorkshop from '@/assets/aws-cloud-workshop.png.asset.json';
+import womenWhoBuild from '@/assets/women-who-build.png.asset.json';
+import dublinTechSummit from '@/assets/dublin-tech-summit.png.asset.json';
 
 // Absolute asset origin keeps uploaded media available on GitHub Pages too.
 export const assetUrl = (asset: { url: string }) => `https://id-preview--f1d34c87-7893-4453-8c52-da3e4693d0a0.lovable.app${asset.url}`;
