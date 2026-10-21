@@ -31,4 +31,19 @@ describe('Portfolio interactions', () => {
   it('clears output without navigation', () => {
     expect(runCommand('clear')).toEqual({ text: '', clear: true });
   });
+  it('presents Trace as past employment, never current', () => {
+    expect(runCommand('about').text).toContain('previously worked');
+    expect(runCommand('about').text).not.toMatch(/work across product analytics.*at Trace/);
+    expect(runCommand('experience').text).toContain('Oct 2026');
+  });
+  it('presents SAP as an incoming internship starting February 2027', () => {
+    for (const cmd of ['sap', 'next']) {
+      expect(runCommand(cmd).text).toContain('February 2027');
+      expect(runCommand(cmd).text).toContain('Incoming');
+    }
+    expect(runCommand('sap').destination).toBe('/#experience');
+  });
+  it('navigates to the highlights section', () => {
+    expect(runCommand('highlights').destination).toBe('/#upto');
+  });
 });
