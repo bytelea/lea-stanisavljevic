@@ -36,27 +36,14 @@ const AboutSection = () => {
               software engineering, data and human-centred technology.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              My experience spans software development, digital analytics and product
-              operations. Previously, I worked in growth and product operations at Trace,
-              exploring website performance, product engagement and digital growth. Before
-              that, I completed a marketing and web internship at Infobip (Anam
-              Technologies), working on web development, analytics and digital initiatives.
+              I've worked in growth and product operations at Trace and completed a
+              marketing and web internship at Infobip. Outside university, I build
+              practical applications, take part in hackathons and contribute to the
+              technology community as a Notion Campus Leader and Hackathon Hub Ambassador.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Outside university, I enjoy building practical applications, participating in
-              hackathons and contributing to the technology community. My projects include
-              PropertyScan, an AI-powered property due diligence tool; Crescend, a
-              music-based social discovery project; and Florist Studio, a business
-              management application for independent florists.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              I'm also a Notion Campus Leader and Hackathon Hub Ambassador, helping
-              students discover opportunities to collaborate, learn and build.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              I'm especially interested in projects that combine technical problem-solving
-              with thoughtful design, and I enjoy continually learning new tools and
-              exploring new ideas.
+              I'm especially drawn to projects that combine technical problem-solving with
+              thoughtful design.
             </p>
           </div>
         </motion.div>

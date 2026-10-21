@@ -64,11 +64,11 @@
 @media (min-width: 641px) and (max-width: 1050px) { .reports-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* About polaroid + grouped skills */
-.about-polaroid { position: relative; width: min(270px, 80%); margin-top: 34px; padding: 10px 10px 12px; background: hsl(var(--paper)); box-shadow: var(--shadow-paper); transform: rotate(-4deg); transition: transform .35s; }
+.about-polaroid { position: relative; width: min(190px, 70%); margin-top: 34px; padding: 8px 8px 10px; background: hsl(var(--paper)); box-shadow: var(--shadow-paper); transform: rotate(-4deg); transition: transform .35s; }
 .about-polaroid:hover { transform: rotate(-1.5deg) translateY(-4px); }
-.about-polaroid img { width: 100%; aspect-ratio: 5/6; object-fit: cover; object-position: top; display: block; }
-.about-polaroid figcaption { font-size: 21px; text-align: center; margin-top: 8px; color: hsl(var(--muted-foreground)); }
-.about-tape { position: absolute; width: 72px; height: 24px; background: hsl(var(--tape) / .55); top: -10px; left: 50%; margin-left: -36px; transform: rotate(-6deg); pointer-events: none; }
+.about-polaroid img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: top; display: block; }
+.about-polaroid figcaption { font-size: 16px; text-align: center; margin-top: 6px; color: hsl(var(--muted-foreground)); }
+.about-tape { position: absolute; width: 56px; height: 18px; background: hsl(var(--tape) / .55); top: -8px; left: 50%; margin-left: -28px; transform: rotate(-6deg); pointer-events: none; }
 .skill-groups { display: flex; flex-direction: column; gap: 22px; }
 .skill-group-label { font-size: 10px; text-transform: uppercase; letter-spacing: .12em; color: hsl(var(--primary)); margin-bottom: 10px; }
 
