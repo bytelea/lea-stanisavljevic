@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, X } from 'lucide-react';
 import { highlights, type Highlight, type HighlightCategory } from '@/data/portfolio';
+import { openExternalLink } from '@/lib/external-link';
 
 const filters: Array<'All' | HighlightCategory> = ['All', 'Hackathons', 'Community', 'Building', 'Learning'];
 
@@ -150,7 +151,7 @@ export default function UpToSection() {
                 </Link>
               )}
               {open.post && (
-                <a href={open.post} target="_blank" rel="noreferrer noopener" className="archive-case-link">
+                <a href={open.post} target="_blank" rel="noreferrer noopener" onClick={openExternalLink} className="archive-case-link">
                   Read the LinkedIn post <ArrowUpRight size={14} aria-hidden="true" />
                 </a>
               )}

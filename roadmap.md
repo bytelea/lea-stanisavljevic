@@ -1,5 +1,10 @@
 # Roadmap
 
+## LinkedIn link opening (22 Oct)
+- [x] Retain original supplied post URLs without rewriting or substituting them
+- [x] Open archive and contact LinkedIn links directly in separate tabs
+- [x] Verified unchanged supplied URLs in five tests; archive and contact links opened separate tabs in the browser, with no app errors and build OK
+
 ## Comprehensive content update (Oct 2026 brief)
 - [x] Upload headshot as CDN asset
 - [x] portfolio.ts: enriched projects (PropertyScan award + live link, Crescend traction, Florist Studio), grouped skills, experience/education/leadership/highlights data
