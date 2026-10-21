@@ -20,3 +20,9 @@
 - [x] Archive: photo cards first, text-only cards last
 - [x] Archive: uniform sizes - all photo cards equal, all text-only cards equal
 - [x] Verify in browser (desktop + mobile)
+
+## Archive photos + education (21 Oct)
+- [ ] Notion workshop card crop raised so faces/board show
+- [ ] AI.WOMEN card photo zoomed in slightly
+- [ ] Pure Accelerate London photo: awaiting upload from user
+- [ ] Education: add SETU BSc Computing in Interactive Digital Art & Design (2021-2023)

@@ -138,6 +138,7 @@ export const upcoming = {
 export const education = [
   { title: 'BSc Data Science & Artificial Intelligence', place: 'Technological University Dublin', period: '2025 – 2028 (expected)' },
   { title: 'Level 6 Software Engineering', place: 'Rathmines College FET', period: '2023 – 2025' },
+  { title: 'BSc Computing in Interactive Digital Art & Design', place: 'SETU (South East Technological University)', period: '2021 – 2023' },
 ];
 
 export const leadership = [
