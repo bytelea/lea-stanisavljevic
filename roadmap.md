@@ -40,3 +40,4 @@
 - [ ] New cards: ESPC Conference 2025, Amazon cloud computing session, Women Who Build with Giveago, Dublin Tech Summit
 - [ ] Read the four LinkedIn posts for accurate captions
 - [ ] Upload photos as CDN assets, wire into highlights, verify in browser
+- [ ] Remove the SAP "Next Chapter" card from Beyond the Screen (kept in Experience)
