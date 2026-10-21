@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Menu, X, Command } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ThemeSwitcher, TerminalButton, usePortfolio } from '@/components/portfolio/PortfolioProvider';
-const navItems = ['Home', 'Projects', 'About', 'Contact'];
+const navItems = ['Home', 'Projects', 'About', 'Experience', 'Contact'];
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { openCommands } = usePortfolio();

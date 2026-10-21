@@ -37,7 +37,8 @@ export function PortfolioProvider({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener('keydown', onKey);
   }, []);
   const actions = [
-    ...['Home', 'Projects', 'About', 'Contact'].map(label => ({ label, run: () => navigate(`/#${label.toLowerCase()}`) })),
+    ...['Home', 'Projects', 'About', 'Experience', 'Contact'].map(label => ({ label, run: () => navigate(`/#${label.toLowerCase()}`) })),
+    { label: "What I've been up to", run: () => navigate('/#upto') },
     ...featuredProjects.map(project => ({ label: project.name, run: () => navigate(`/?project=${project.slug}`) })),
     { label: 'More work & research', run: () => navigate('/?view=archive') },
     { label: 'Open terminal', run: () => setTerminalOpen(true) },

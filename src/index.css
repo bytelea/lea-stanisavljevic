@@ -62,3 +62,83 @@
 .report-highlights { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; color: hsl(var(--muted-foreground)); font-size: 10px; line-height: 1.6; }
 .report-card .project-cta { margin-top: auto; }
 @media (min-width: 641px) and (max-width: 1050px) { .reports-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* About polaroid + grouped skills */
+.about-polaroid { position: relative; width: min(270px, 80%); margin-top: 34px; padding: 10px 10px 12px; background: hsl(var(--paper)); box-shadow: var(--shadow-paper); transform: rotate(-4deg); transition: transform .35s; }
+.about-polaroid:hover { transform: rotate(-1.5deg) translateY(-4px); }
+.about-polaroid img { width: 100%; aspect-ratio: 5/6; object-fit: cover; object-position: top; display: block; }
+.about-polaroid figcaption { font-size: 21px; text-align: center; margin-top: 8px; color: hsl(var(--muted-foreground)); }
+.about-tape { position: absolute; width: 72px; height: 24px; background: hsl(var(--tape) / .55); top: -10px; left: 50%; margin-left: -36px; transform: rotate(-6deg); pointer-events: none; }
+.skill-groups { display: flex; flex-direction: column; gap: 22px; }
+.skill-group-label { font-size: 10px; text-transform: uppercase; letter-spacing: .12em; color: hsl(var(--primary)); margin-bottom: 10px; }
+
+/* Experience section */
+.experience-section { padding-top: 75px; padding-bottom: 80px; }
+.up-next-card { border: 1px solid hsl(var(--primary) / .35); background: hsl(var(--accent) / .4); border-radius: 7px; padding: 22px 24px; margin-bottom: 44px; }
+.up-next-label { display: flex; align-items: center; gap: 7px; font-size: 10px; text-transform: uppercase; letter-spacing: .14em; color: hsl(var(--primary)); margin-bottom: 12px; }
+.up-next-body { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+.up-next-body h3 { font-size: 30px; line-height: 1.1; }
+.up-next-role { color: hsl(var(--muted-foreground)); font-size: 13px; margin-top: 6px; }
+.up-next-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.incoming-pill { font-size: 9px; text-transform: uppercase; letter-spacing: .14em; color: hsl(var(--primary)); border: 1px solid hsl(var(--primary) / .45); border-radius: 999px; padding: 4px 12px; background: hsl(var(--paper)); }
+.up-next-period { font-size: 11px; color: hsl(var(--muted-foreground)); }
+.up-next-note { font-size: 12px; color: hsl(var(--muted-foreground)); margin-top: 14px; line-height: 1.7; }
+.experience-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 60px; }
+.experience-kicker { margin-bottom: 18px; }
+.leadership-kicker { margin-top: 34px; }
+.experience-item { border-top: 1px solid hsl(var(--border)); padding: 20px 0 24px; }
+.experience-item h3 { font-size: 24px; line-height: 1.15; display: flex; align-items: center; gap: 8px; }
+.experience-icon { color: hsl(var(--primary)); flex-shrink: 0; }
+.experience-head { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; }
+.experience-period { font-size: 10px; color: hsl(var(--muted-foreground)); white-space: nowrap; }
+.experience-role { font-size: 12px; color: hsl(var(--muted-foreground)); margin-top: 6px; }
+.experience-item ul { margin-top: 12px; padding-left: 16px; display: flex; flex-direction: column; gap: 6px; }
+.experience-item li { font-size: 12px; line-height: 1.7; color: hsl(var(--muted-foreground)); list-style: disc; }
+
+/* What I've been up to */
+.upto-section { padding-top: 10px; padding-bottom: 85px; }
+.upto-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.upto-card-link { text-decoration: none; color: inherit; display: block; height: 100%; }
+.upto-card { height: 100%; background: hsl(var(--card)); border: 1px solid hsl(var(--border)); border-radius: 7px; padding: 20px; box-shadow: var(--shadow-paper); transition: transform .3s, border-color .3s; }
+.upto-card-link:hover .upto-card, .upto-card:hover { transform: translateY(-4px) rotate(0deg) !important; border-color: hsl(var(--primary) / .45); }
+.upto-card-0 { transform: rotate(-1.2deg); }
+.upto-card-1 { transform: rotate(.8deg) translateY(10px); }
+.upto-card-2 { transform: rotate(-.6deg); }
+.upto-card-3 { transform: rotate(1.1deg); }
+.upto-card-4 { transform: rotate(-.9deg) translateY(8px); }
+.upto-card-5 { transform: rotate(.7deg); }
+.upto-card-6 { transform: rotate(-1deg) translateY(6px); border-color: hsl(var(--primary) / .4); background: hsl(var(--accent) / .35); }
+.upto-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; }
+.upto-label { display: inline-flex; align-items: center; gap: 6px; font-size: 9px; text-transform: uppercase; letter-spacing: .12em; color: hsl(var(--primary)); }
+.upto-date { font-size: 9px; color: hsl(var(--muted-foreground)); }
+.upto-card h3 { font-size: 22px; line-height: 1.15; margin-bottom: 8px; }
+.upto-card p { font-size: 11px; line-height: 1.7; color: hsl(var(--muted-foreground)); }
+.upto-link { display: inline-flex; align-items: center; gap: 5px; margin-top: 12px; font-size: 10px; color: hsl(var(--primary)); }
+
+/* Case study additions */
+.case-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+.case-badges .case-status { margin-bottom: 0; }
+.case-achievement { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; letter-spacing: .06em; color: hsl(var(--foreground)); border: 1px solid hsl(var(--border)); border-radius: 999px; padding: 5px 14px; background: hsl(var(--paper)); }
+.case-achievement svg { color: hsl(var(--primary)); }
+.case-features, .case-decisions, .case-future { padding-block: 30px; border-top: 1px solid hsl(var(--border)); }
+.case-features ul, .case-decisions ul { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 34px; padding-left: 16px; }
+.case-decisions ul { grid-template-columns: 1fr; }
+.case-features li, .case-decisions li { font-size: 13px; line-height: 1.7; color: hsl(var(--muted-foreground)); list-style: disc; }
+.case-future p { margin-top: 14px; font-size: 13px; line-height: 1.8; color: hsl(var(--muted-foreground)); max-width: 660px; }
+.case-actions .case-actions a, .case-actions > a { background: hsl(var(--foreground)); color: hsl(var(--background)); font-size: 12px; }
+
+@media (max-width: 800px) {
+  .experience-grid { grid-template-columns: 1fr; gap: 30px; }
+  .upto-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .case-features ul { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .experience-section { padding-top: 55px; padding-bottom: 55px; }
+  .upto-section { padding-bottom: 55px; }
+  .upto-grid { grid-template-columns: 1fr; }
+  .upto-card { transform: none !important; }
+  .up-next-body h3 { font-size: 25px; }
+  .up-next-meta { align-items: flex-start; }
+  .experience-head { flex-direction: column; gap: 4px; }
+  .about-polaroid { margin-inline: auto; }
+}
