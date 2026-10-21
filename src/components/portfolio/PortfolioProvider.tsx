@@ -8,7 +8,9 @@ import Terminal from './Terminal';
 import { featuredProjects } from '@/data/portfolio';
 
 type PortfolioContextType = { theme: PortfolioTheme; setTheme: (theme: PortfolioTheme) => void; openTerminal: () => void; openCommands: () => void };
-const PortfolioContext = createContext<PortfolioContextType | undefined>(undefined);
+// Keep one context instance across hot reloads so consumers and the provider never diverge.
+const contextStore = globalThis as typeof globalThis & { __portfolioContext?: React.Context<PortfolioContextType | undefined> };
+const PortfolioContext = contextStore.__portfolioContext ?? (contextStore.__portfolioContext = createContext<PortfolioContextType | undefined>(undefined));
 export function usePortfolio() {
   const context = useContext(PortfolioContext);
   if (!context) throw new Error('Portfolio context is missing');
