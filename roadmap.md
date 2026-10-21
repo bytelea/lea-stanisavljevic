@@ -13,3 +13,10 @@
 - [x] index.css: styles for new sections
 - [x] Tests for new terminal commands; run tests + build
 - [x] Browser verification (desktop + mobile, light + dark)
+
+## Archive + About polish (21 Oct)
+- [x] About: bio text vertically centred beside heading + smaller headshot
+- [x] Archive: Pressure Cooker crowd photo becomes the Dublin AI Week card photo
+- [x] Archive: photo cards first, text-only cards last
+- [x] Archive: uniform sizes - all photo cards equal, all text-only cards equal
+- [x] Verify in browser (desktop + mobile)

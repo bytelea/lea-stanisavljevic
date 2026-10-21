@@ -149,12 +149,12 @@ export type HighlightCategory = 'Hackathons' | 'Community' | 'Building' | 'Learn
 
 export type Highlight = {
   category: HighlightCategory; date?: string; title: string; note: string;
-  detail?: string; images?: string[]; imageAlt?: string; projectSlug?: string; featured?: boolean;
+  detail?: string; images?: string[]; imageAlt?: string; projectSlug?: string;
 };
 
 export const highlights: Highlight[] = [
   {
-    category: 'Hackathons', date: '2026', title: 'AI.WOMEN Hackathon 2026', featured: true,
+    category: 'Hackathons', date: '2026', title: 'AI.WOMEN Hackathon 2026',
     note: 'Built the backend and AI pipeline for PropertyScan as part of a team, receiving second place for Best Use of Google Cloud.',
     detail: 'A team of five built PropertyScan, an AI-powered property due diligence tool, in a single hackathon. I focused on backend development and the AI pipeline: document extraction, evidence validation and the deterministic cross-document rule engine. The project took second place for Best Use of Google Cloud.',
     images: [assetUrl(aiwomenHackathon)], imageAlt: 'The PropertyScan team on stage at the AI.WOMEN Hackathon 2026, receiving second place for Best Use of Google Cloud',
@@ -178,8 +178,8 @@ export const highlights: Highlight[] = [
     category: 'Community', date: '2026', title: 'Dublin AI Week',
     note: 'Helped run a Dublin AI Week hackathon that brought together approximately 100 participants.',
     detail: 'As a Notion Campus Leader I was involved in organising a Dublin AI Week hackathon that brought together approximately 100 participants to build with AI.',
-    images: [assetUrl(dublinAiWeek)],
-    imageAlt: 'A panel discussion during Dublin AI Week',
+    images: [assetUrl(pressureCookerCrowd), assetUrl(dublinAiWeek)],
+    imageAlt: 'A packed Dublin AI Week session with attendees wearing Dublin AI Week t-shirts',
   },
   {
     category: 'Community', date: '2026 – Present', title: 'Hackathon Hub Ambassador',
@@ -190,7 +190,7 @@ export const highlights: Highlight[] = [
     category: 'Building', date: '2026', title: 'Crescend · Pressure Cooker 2026',
     note: 'Collaborated on a music-driven social discovery concept, contributing to design, prototyping and product development. The landing page attracted 108 waitlist sign-ups.',
     detail: 'Developed as part of the Pressure Cooker 2026 experience in Dublin. I contributed to UX/UI design, interactive prototyping and collaborative product development. The landing page has attracted 108 waitlist sign-ups so far.',
-    images: [assetUrl(pressureCookerTeam), assetUrl(pressureCookerCrowd)],
+    images: [assetUrl(pressureCookerTeam)],
     imageAlt: 'Working with the team during the Pressure Cooker 2026 experience in Dublin',
     projectSlug: 'crescend',
   },
