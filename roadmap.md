@@ -1,9 +1,15 @@
-# Portfolio rebuild
+# Roadmap
 
-- [x] Build collage-led homepage using the uploaded project artwork and source-backed introduction.
-- [x] Add working terminal, command menu, keyboard navigation and light/dark/pastel themes.
-- [x] Add three linked project overview pages; reserve detailed case studies for later.
-- [x] Preserve existing projects, research, contact links and GitHub Pages deployment configuration.
-- [x] Verify navigation, terminal, themes and layout on desktop and mobile.
-- [x] Replace research covers with cohesive text-free editorial artwork.
-- [x] Repair and verify browser access to all five research documents.
+## Comprehensive content update (Oct 2026 brief)
+- [ ] Upload headshot as CDN asset
+- [ ] portfolio.ts: enriched projects (PropertyScan award + live link, Crescend traction, Florist Studio), grouped skills, experience/education/leadership/highlights data
+- [ ] Hero: new bio, remove current-Trace footnote
+- [ ] About: new long bio, headshot polaroid, grouped skills
+- [ ] New Experience section: Trace (past), Infobip, education, leadership, "Up Next: SAP" incoming card
+- [ ] New "What I've Been Up To" section (scrapbook highlights)
+- [ ] ProjectOverview: richer case studies (achievement, features, results, live link only where public)
+- [ ] Terminal: update about, add now/experience/sap/highlights commands
+- [ ] Command palette + navbar: include new sections
+- [ ] index.css: styles for new sections
+- [ ] Tests for new terminal commands; run tests + build
+- [ ] Browser verification (desktop + mobile, light + dark)
