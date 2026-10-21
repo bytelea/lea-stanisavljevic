@@ -10,6 +10,12 @@ import aiwomenHackathon from '@/assets/aiwomen-hackathon.png.asset.json';
 import pressureCookerTeam from '@/assets/pressure-cooker-team.png.asset.json';
 import pressureCookerCrowd from '@/assets/pressure-cooker-crowd.png.asset.json';
 import dublinAiWeek from '@/assets/dublin-ai-week.png.asset.json';
+import pureAccelerate from '@/assets/pure-accelerate-london.png.asset.json';
+import hackathonHub from '@/assets/hackathon-hub-ambassador.png.asset.json';
+import espcConference from '@/assets/espc-conference-2025.png.asset.json';
+import awsWorkshop from '@/assets/aws-cloud-workshop.png.asset.json';
+import womenWhoBuild from '@/assets/women-who-build.png.asset.json';
+import dublinTechSummit from '@/assets/dublin-tech-summit.png.asset.json';
 
 // Absolute asset origin keeps uploaded media available on GitHub Pages too.
 export const assetUrl = (asset: { url: string }) => `https://id-preview--f1d34c87-7893-4453-8c52-da3e4693d0a0.lovable.app${asset.url}`;
@@ -142,16 +148,33 @@ export const education = [
 ];
 
 export const leadership = [
-  { title: 'Notion Campus Leader', period: 'July 2026 – Present', note: 'Leading student technology initiatives at TU Dublin, including organising a Dublin AI Week hackathon for approximately 100 participants.' },
-  { title: 'Hackathon Hub Ambassador', period: 'August 2026 – Present', note: 'Promoting hackathons and technology events to students across Ireland, connecting university communities with opportunities to build.' },
+  {
+    title: 'Notion Campus Leader', period: 'July 2026 – Present',
+    note: 'Leading student technology initiatives at TU Dublin.',
+    points: [
+      'Organise and run student technology events and initiatives on campus.',
+      'Ran a Notion hackathon at TU Dublin, from planning through to the day itself.',
+      'Hosted the "Get Your Semester Together with Notion" workshop for students.',
+      'Helped organise a Dublin AI Week hackathon for approximately 100 participants.',
+    ],
+  },
+  {
+    title: 'Hackathon Hub Ambassador', period: 'August 2026 – Present',
+    note: 'Promoting hackathons and technology events to students across Ireland.',
+    points: [
+      'Connect university communities with opportunities to build and collaborate.',
+      'Help students find their first hackathon and get started with a team.',
+      'Share hackathons, workshops and innovation programmes with students who have not been to one before.',
+    ],
+  },
 ];
 
-export type HighlightCategory = 'Hackathons' | 'Community' | 'Building' | 'Learning' | 'Next Chapter';
+export type HighlightCategory = 'Hackathons' | 'Community' | 'Building' | 'Learning';
 
 export type Highlight = {
   category: HighlightCategory; date?: string; title: string; note: string;
   detail?: string; images?: string[]; imageAlt?: string; projectSlug?: string;
-  imagePosition?: string; imageZoom?: number;
+  imagePosition?: string; imageZoom?: number; post?: string;
 };
 
 export const highlights: Highlight[] = [
@@ -189,6 +212,8 @@ export const highlights: Highlight[] = [
     category: 'Community', date: '2026 – Present', title: 'Hackathon Hub Ambassador',
     note: 'Promoting hackathons, student innovation and opportunities for university students to collaborate and build.',
     detail: 'As a Hackathon Hub Ambassador I help students discover hackathons and opportunities to collaborate, connecting university communities across Ireland with chances to build.',
+    images: [assetUrl(hackathonHub)],
+    imageAlt: 'A Hackathon Hub ambassador card naming Lea Stan as ambassador for Dublin',
   },
   {
     category: 'Building', date: '2026', title: 'Crescend · Pressure Cooker 2026',
@@ -208,15 +233,44 @@ export const highlights: Highlight[] = [
     category: 'Learning', date: '2026', title: 'Pure Accelerate, London',
     note: 'Attended the Pure Accelerate conference in London, exploring data storage, cloud infrastructure and enterprise technology.',
     detail: 'Attended the Pure Accelerate conference in London, learning about data storage, cloud infrastructure and how enterprise technology is evolving.',
+    images: [assetUrl(pureAccelerate)],
+    imageAlt: 'A panel session at the Pure Accelerate conference in London',
+  },
+  {
+    category: 'Learning', date: '2025', title: 'Dublin ESPC Conference 2025',
+    note: 'Two days at Dublin ESPC 2025 exploring Microsoft 365, Copilot and how AI is shaping the way we build and work.',
+    detail: 'Attended Dublin ESPC 2025 with the CS++ society at TU Dublin. The two days covered Microsoft 365, Copilot and the growing role of AI in everyday work. Meeting the Women In M365 community was a highlight: their advice and encouragement for women in tech made the conference feel personal as well as technical.',
+    images: [assetUrl(espcConference)],
+    imageAlt: 'A mirror selfie at the Dublin ESPC 2025 conference with event passes on a lanyard',
+    post: 'https://lnkd.in/p/dy6g5fMN',
+  },
+  {
+    category: 'Learning', date: '2026', title: 'AWS Cloud Workshop at Amazon Dublin',
+    note: 'First hands-on exposure to Amazon Web Services: serverless architecture, Lambda, API Gateway, load balancers and DynamoDB.',
+    detail: 'A WorldSkills Ireland workshop hosted by the Faculty of Computing, Digital and Data at TU Dublin, held at the Amazon AWS offices in Dublin. The session introduced real-world cloud concepts including serverless architectures, Lambda, API Gateway, Application Load Balancers and DynamoDB, and showed how those services are used in industry.',
+    images: [assetUrl(awsWorkshop)],
+    imageAlt: 'Workshop attendees gathered for a group photo at the AWS cloud workshop at the Amazon Dublin offices',
+    post: 'https://lnkd.in/p/dSHE9Hxp',
+  },
+  {
+    category: 'Community', date: '2026', title: 'Women Who Build with Give(a)Go',
+    note: 'A day in a room full of women building, experimenting and turning ideas into working products.',
+    detail: 'Attended the "Women Who Build" event organised by Give(a)Go. Designers, developers, product people and people in non-technical roles spent the day exploring Lovable and seeing how quickly an idea moves from concept to working product. I used the time to work on this portfolio website and watch progress happen in real time.',
+    images: [assetUrl(womenWhoBuild)],
+    imageAlt: 'Women working on laptops at the Women Who Build event with Give(a)Go',
+    post: 'https://lnkd.in/p/dw_zAn3c',
+  },
+  {
+    category: 'Learning', date: '2026', title: 'Dublin Tech Summit',
+    note: 'A day at the RDS hearing people across the industry talk AI, innovation and emerging technologies.',
+    detail: 'Attended the Dublin Tech Summit at the RDS. The sessions covered AI, innovation and emerging technologies, and the best part was connecting with professionals, students and founders who are all passionate about building and learning. Events like this are a good reminder of how much curiosity, networking and community matter in tech.',
+    images: [assetUrl(dublinTechSummit)],
+    imageAlt: 'The exhibition hall at the Dublin Tech Summit, with exhibitor booths and rows of seating',
+    post: 'https://lnkd.in/p/dC26Y5nZ',
   },
   {
     category: 'Learning', title: 'Learning & exploring',
     note: 'Developing skills in AI, software engineering, cloud technology and data analytics through university projects, independent development, DataCamp and IBM SkillsBuild training.',
     detail: 'Alongside my degree, I keep learning through university projects, independent development and structured training on DataCamp and IBM SkillsBuild, across AI, software engineering, cloud technology and data analytics.',
-  },
-  {
-    category: 'Next Chapter', date: 'February 2027', title: "What's next: SAP",
-    note: 'Preparing to join SAP as an incoming iXp Technical Support Engineer Intern in February 2027.',
-    detail: 'A confirmed next step: in February 2027 I join SAP as an iXp Technical Support Engineer Intern.',
   },
 ];

@@ -26,3 +26,18 @@
 - [x] AI.WOMEN card photo zoomed in slightly
 - [ ] Pure Accelerate London photo: awaiting upload from user
 - [x] Education: add SETU BSc Computing in Interactive Digital Art & Design (2021-2023)
+
+## Experience layout (21 Oct)
+- [x] Previous Experience and Leadership & Community side by side, divided columns
+- [x] Leadership entries expanded into bullet points matching the experience cards
+- [x] Education moved to a full-width three-column band below the two columns
+- [x] Handwritten closing note + link from the community column to Beyond the Screen (removed at user request)
+- [x] Verify in browser (desktop + mobile, light + dark), refresh docs copy
+
+## Beyond the Screen: new event photos (21 Oct)
+- [x] Identify the six uploaded photos and map them to events
+- [x] Pure Accelerate London card: add its photo
+- [x] New cards: ESPC Conference 2025, AWS cloud workshop, Women Who Build with Give(a)Go, Dublin Tech Summit
+- [x] Read the four LinkedIn posts for accurate captions
+- [x] Upload photos as CDN assets, wire into highlights, verify in browser
+- [x] Remove the SAP "Next Chapter" card from Beyond the Screen (kept in Experience)
