@@ -19,4 +19,4 @@
 - [x] Archive: Pressure Cooker crowd photo becomes the Dublin AI Week card photo
 - [x] Archive: photo cards first, text-only cards last
 - [x] Archive: uniform sizes - all photo cards equal, all text-only cards equal
-- [ ] Verify in browser (desktop + mobile)
+- [x] Verify in browser (desktop + mobile)
