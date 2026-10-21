@@ -22,7 +22,7 @@
 - [x] Verify in browser (desktop + mobile)
 
 ## Archive photos + education (21 Oct)
-- [ ] Notion workshop card crop raised so faces/board show
-- [ ] AI.WOMEN card photo zoomed in slightly
+- [x] Notion workshop card crop raised so faces/board show
+- [x] AI.WOMEN card photo zoomed in slightly
 - [ ] Pure Accelerate London photo: awaiting upload from user
-- [ ] Education: add SETU BSc Computing in Interactive Digital Art & Design (2021-2023)
+- [x] Education: add SETU BSc Computing in Interactive Digital Art & Design (2021-2023)
