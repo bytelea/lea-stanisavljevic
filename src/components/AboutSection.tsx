@@ -13,7 +13,7 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="grid md:grid-cols-2 gap-16 items-start">
+          className="grid md:grid-cols-2 gap-16 items-center">
 
           <div className="about-left">
             <p className="text-sm uppercase tracking-[0.3em] text-primary">About</p>

@@ -13,7 +13,11 @@ export default function UpToSection() {
   const [filter, setFilter] = useState<(typeof filters)[number]>('All');
   const [open, setOpen] = useState<Highlight | null>(null);
 
-  const visible = filter === 'All' ? highlights : highlights.filter((h) => h.category === filter);
+  // Photo entries lead the archive; text-only entries follow, each group keeping its own order.
+  const hasPhoto = (h: Highlight) => Boolean(h.images && h.images.length > 0);
+  const visible = (filter === 'All' ? highlights : highlights.filter((h) => h.category === filter))
+    .slice()
+    .sort((a, b) => Number(hasPhoto(b)) - Number(hasPhoto(a)));
 
   useEffect(() => {
     if (!open) return;
@@ -67,7 +71,7 @@ export default function UpToSection() {
                 layout={!reduceMotion}
                 {...rise(0.05 * i)}
                 exit={reduceMotion ? {} : { opacity: 0, y: 12 }}
-                className={`archive-card${highlight.featured ? ' archive-card-featured' : ''}${highlight.category === 'Next Chapter' ? ' archive-card-future' : ''}`}
+                className={`archive-card${hasPhoto(highlight) ? ' archive-card-photo' : ' archive-card-text'}${highlight.category === 'Next Chapter' ? ' archive-card-future' : ''}`}
                 onClick={() => setOpen(highlight)}
                 aria-haspopup="dialog">
                 {highlight.images && highlight.images.length > 0 && (
