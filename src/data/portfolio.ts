@@ -184,6 +184,7 @@ export const highlights: Highlight[] = [
     images: [assetUrl(aiwomenHackathon)], imageAlt: 'The PropertyScan team on stage at the AI.WOMEN Hackathon 2026, receiving second place for Best Use of Google Cloud',
     imagePosition: '70% bottom', imageZoom: 1.34,
     projectSlug: 'propertyscan',
+    post: 'https://lnkd.in/p/did8F4UZ',
   },
   {
     category: 'Community', date: '2026', title: 'Notion Hackathon',
@@ -199,7 +200,7 @@ export const highlights: Highlight[] = [
     detail: 'As a Notion Campus Leader I hosted the "Get Your Semester Together with Notion" workshop at TU Dublin, helping students set up their studies, projects and plans in Notion.',
     images: [assetUrl(notionWorkshop)],
     imageAlt: 'Presenting the Get Your Semester Together with Notion workshop at TU Dublin',
-    imagePosition: 'center 45%',
+    imagePosition: 'center 10%',
     post: 'https://www.linkedin.com/posts/lea-stanisavljevic_notion-notioncampusleaders-tudublin-activity-7511452978936090624-R1CM',
   },
   {
