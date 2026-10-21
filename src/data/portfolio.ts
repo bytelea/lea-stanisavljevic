@@ -150,6 +150,7 @@ export type HighlightCategory = 'Hackathons' | 'Community' | 'Building' | 'Learn
 export type Highlight = {
   category: HighlightCategory; date?: string; title: string; note: string;
   detail?: string; images?: string[]; imageAlt?: string; projectSlug?: string;
+  imagePosition?: string; imageZoom?: number;
 };
 
 export const highlights: Highlight[] = [
@@ -158,6 +159,7 @@ export const highlights: Highlight[] = [
     note: 'Built the backend and AI pipeline for PropertyScan as part of a team, receiving second place for Best Use of Google Cloud.',
     detail: 'A team of five built PropertyScan, an AI-powered property due diligence tool, in a single hackathon. I focused on backend development and the AI pipeline: document extraction, evidence validation and the deterministic cross-document rule engine. The project took second place for Best Use of Google Cloud.',
     images: [assetUrl(aiwomenHackathon)], imageAlt: 'The PropertyScan team on stage at the AI.WOMEN Hackathon 2026, receiving second place for Best Use of Google Cloud',
+    imagePosition: 'center bottom', imageZoom: 1.18,
     projectSlug: 'propertyscan',
   },
   {
@@ -173,6 +175,7 @@ export const highlights: Highlight[] = [
     detail: 'As a Notion Campus Leader I hosted the "Get Your Semester Together with Notion" workshop at TU Dublin, helping students set up their studies, projects and plans in Notion.',
     images: [assetUrl(notionWorkshop)],
     imageAlt: 'Presenting the Get Your Semester Together with Notion workshop at TU Dublin',
+    imagePosition: 'center top',
   },
   {
     category: 'Community', date: '2026', title: 'Dublin AI Week',
