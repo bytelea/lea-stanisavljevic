@@ -15,8 +15,8 @@
 - [x] Browser verification (desktop + mobile, light + dark)
 
 ## Archive + About polish (21 Oct)
-- [ ] About: bio text vertically centred beside heading + smaller headshot
-- [ ] Archive: Pressure Cooker crowd photo becomes the Dublin AI Week card photo
-- [ ] Archive: photo cards first, text-only cards last
-- [ ] Archive: uniform sizes - all photo cards equal, all text-only cards equal
+- [x] About: bio text vertically centred beside heading + smaller headshot
+- [x] Archive: Pressure Cooker crowd photo becomes the Dublin AI Week card photo
+- [x] Archive: photo cards first, text-only cards last
+- [x] Archive: uniform sizes - all photo cards equal, all text-only cards equal
 - [ ] Verify in browser (desktop + mobile)
