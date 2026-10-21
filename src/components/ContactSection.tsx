@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Mail, Linkedin, Github, ArrowUpRight } from "lucide-react";
+import { openExternalLink } from '@/lib/external-link';
 
 const links = [
   {
@@ -57,6 +58,7 @@ const ContactSection = () => {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={link.label === 'LinkedIn' ? openExternalLink : undefined}
               className="flex items-center justify-between p-5 border border-border rounded-xl hover:border-primary/30 hover:bg-secondary/50 transition-all duration-200 group"
             >
               <div className="flex items-center gap-4">
