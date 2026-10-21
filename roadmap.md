@@ -5,3 +5,5 @@
 - [x] Add three linked project overview pages; reserve detailed case studies for later.
 - [x] Preserve existing projects, research, contact links and GitHub Pages deployment configuration.
 - [x] Verify navigation, terminal, themes and layout on desktop and mobile.
+- [ ] Replace research covers with cohesive text-free editorial artwork.
+- [ ] Repair and verify browser access to all five research documents.
