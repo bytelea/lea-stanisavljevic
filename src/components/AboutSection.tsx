@@ -13,15 +13,9 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="grid md:grid-cols-2 gap-16">
+          className="grid md:grid-cols-2 gap-16 items-start">
 
-          <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4">About</p>
-            <h2 className="font-display text-4xl sm:text-5xl font-bold mb-6">
-              Building with
-              <br />
-              <span className="text-muted-foreground">data & curiosity</span>
-            </h2>
+          <div className="about-photo-col">
             <figure className="about-polaroid">
               <span className="about-tape" aria-hidden="true" />
               <img src={headshotUrl} alt="Portrait of Lea Stan" loading="lazy" />
@@ -30,6 +24,12 @@ const AboutSection = () => {
           </div>
 
           <div className="space-y-6">
+            <p className="text-sm uppercase tracking-[0.3em] text-primary">About</p>
+            <h2 className="font-display text-4xl sm:text-5xl font-bold">
+              Building with
+              <br />
+              <span className="text-muted-foreground">data & curiosity</span>
+            </h2>
             <p className="text-muted-foreground leading-relaxed">
               I'm a third-year BSc Data Science &amp; Artificial Intelligence student at
               Technological University Dublin, interested in the intersection of AI,
