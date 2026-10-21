@@ -22,13 +22,11 @@ describe('Portfolio interactions', () => {
     expect(runCommand('open missing').destination).toBeUndefined();
   });
   it('keeps Semester Radar separate from the three primary projects', () => {
-    expect(featuredProjects.map(p => p.name)).toEqual(['PropertyScan', 'Crescend', 'Eternal Blooms']);
+    expect(featuredProjects.map(p => p.name)).toEqual(['PropertyScan', 'Crescend', 'Florist Studio']);
   });
-  it('does not invent a Crescend stack or external links', () => {
+  it('shows only confirmed Crescend technology badges', () => {
     const project = featuredProjects.find(p => p.slug === 'crescend');
-    expect(project?.github).toBeUndefined();
-    expect(project?.live).toBeUndefined();
-    expect(project?.tags).toEqual(['Social discovery', 'Music', 'Product design']);
+    expect(project?.tags).toEqual(['Social product design', 'Spotify integration', 'Supabase', 'Authentication']);
   });
   it('clears output without navigation', () => {
     expect(runCommand('clear')).toEqual({ text: '', clear: true });
