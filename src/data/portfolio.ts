@@ -200,7 +200,7 @@ export const highlights: Highlight[] = [
     detail: 'As a Notion Campus Leader I hosted the "Get Your Semester Together with Notion" workshop at TU Dublin, helping students set up their studies, projects and plans in Notion.',
     images: [assetUrl(notionWorkshop)],
     imageAlt: 'Presenting the Get Your Semester Together with Notion workshop at TU Dublin',
-    imagePosition: 'center 45%',
+    imagePosition: 'center 10%',
     post: 'https://www.linkedin.com/posts/lea-stanisavljevic_notion-notioncampusleaders-tudublin-activity-7511452978936090624-R1CM',
   },
   {
