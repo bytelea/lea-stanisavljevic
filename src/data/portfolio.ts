@@ -9,7 +9,6 @@ import notionWorkshop from '@/assets/notion-workshop.png.asset.json';
 import aiwomenHackathon from '@/assets/aiwomen-hackathon.png.asset.json';
 import pressureCookerTeam from '@/assets/pressure-cooker-team.png.asset.json';
 import pressureCookerCrowd from '@/assets/pressure-cooker-crowd.png.asset.json';
-import dublinAiWeek from '@/assets/dublin-ai-week.png.asset.json';
 import pureAccelerate from '@/assets/pure-accelerate-london.png.asset.json';
 import hackathonHub from '@/assets/hackathon-hub-ambassador.png.asset.json';
 import espcConference from '@/assets/espc-conference-2025.png.asset.json';
@@ -183,7 +182,7 @@ export const highlights: Highlight[] = [
     note: 'Built the backend and AI pipeline for PropertyScan as part of a team, receiving second place for Best Use of Google Cloud.',
     detail: 'A team of five built PropertyScan, an AI-powered property due diligence tool, in a single hackathon. I focused on backend development and the AI pipeline: document extraction, evidence validation and the deterministic cross-document rule engine. The project took second place for Best Use of Google Cloud.',
     images: [assetUrl(aiwomenHackathon)], imageAlt: 'The PropertyScan team on stage at the AI.WOMEN Hackathon 2026, receiving second place for Best Use of Google Cloud',
-    imagePosition: 'center bottom', imageZoom: 1.34,
+    imagePosition: '70% bottom', imageZoom: 1.34,
     projectSlug: 'propertyscan',
   },
   {
@@ -192,6 +191,7 @@ export const highlights: Highlight[] = [
     detail: 'As a Notion Campus Leader I organised and ran a Notion hackathon at TU Dublin, bringing students together to build, collaborate and pick up some Notion swag along the way.',
     images: [assetUrl(notionHackathon)],
     imageAlt: 'Handing out Notion tote bags at the Notion hackathon at TU Dublin',
+    imagePosition: 'center 65%',
   },
   {
     category: 'Community', date: '2026', title: 'Get Your Semester Together with Notion',
@@ -199,13 +199,13 @@ export const highlights: Highlight[] = [
     detail: 'As a Notion Campus Leader I hosted the "Get Your Semester Together with Notion" workshop at TU Dublin, helping students set up their studies, projects and plans in Notion.',
     images: [assetUrl(notionWorkshop)],
     imageAlt: 'Presenting the Get Your Semester Together with Notion workshop at TU Dublin',
-    imagePosition: 'center top',
+    imagePosition: 'center 45%',
   },
   {
     category: 'Community', date: '2026', title: 'Dublin AI Week',
     note: 'Helped run a Dublin AI Week hackathon that brought together approximately 100 participants.',
     detail: 'As a Notion Campus Leader I was involved in organising a Dublin AI Week hackathon that brought together approximately 100 participants to build with AI.',
-    images: [assetUrl(pressureCookerCrowd), assetUrl(dublinAiWeek)],
+    images: [assetUrl(pressureCookerCrowd)],
     imageAlt: 'A packed Dublin AI Week session with attendees wearing Dublin AI Week t-shirts',
   },
   {
@@ -222,12 +222,6 @@ export const highlights: Highlight[] = [
     images: [assetUrl(pressureCookerTeam)],
     imageAlt: 'Working with the team during the Pressure Cooker 2026 experience in Dublin',
     projectSlug: 'crescend',
-  },
-  {
-    category: 'Building', title: 'Florist Studio',
-    note: 'Building a digital management application that translates real independent-florist business needs into software.',
-    detail: 'Florist Studio brings pricing, orders, inventory, events, invoicing and loyalty into one installable workspace for independent florists, inspired by real floristry business workflows.',
-    projectSlug: 'eternal-blooms',
   },
   {
     category: 'Learning', date: '2026', title: 'Pure Accelerate, London',
