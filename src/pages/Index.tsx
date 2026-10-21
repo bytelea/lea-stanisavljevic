@@ -3,6 +3,8 @@ import { useLocation, Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
+import ExperienceSection from '@/components/ExperienceSection';
+import UpToSection from '@/components/UpToSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -20,5 +22,5 @@ export default function Index() {
     if (location.hash) requestAnimationFrame(() => document.getElementById(location.hash.slice(1))?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' }));
     else window.scrollTo(0, 0);
   }, [location]);
-  return <PortfolioProvider><div className="portfolio-site"><Navbar />{project ? <ProjectOverview slug={project} /> : archive ? <main className="archive-page"><div className="page-width"><Button asChild variant="link"><Link to="/#projects"><ArrowLeft />Back to featured projects</Link></Button></div><ProjectsSection /></main> : <main><HeroSection /><FeaturedProjects /><AboutSection /><ContactSection /></main>}<Footer /></div></PortfolioProvider>;
+  return <PortfolioProvider><div className="portfolio-site"><Navbar />{project ? <ProjectOverview slug={project} /> : archive ? <main className="archive-page"><div className="page-width"><Button asChild variant="link"><Link to="/#projects"><ArrowLeft />Back to featured projects</Link></Button></div><ProjectsSection /></main> : <main><HeroSection /><FeaturedProjects /><AboutSection /><ExperienceSection /><UpToSection /><ContactSection /></main>}<Footer /></div></PortfolioProvider>;
 }
