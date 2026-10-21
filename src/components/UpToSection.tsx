@@ -39,7 +39,7 @@ export default function UpToSection() {
     <section id="upto" className="upto-section page-width" ref={ref}>
       <motion.div {...rise(0)} animate={isInView ? { opacity: 1, y: 0 } : {}}>
         <div className="section-topline">
-          <span className="eyebrow">THE PERSONAL ARCHIVE / 2026</span>
+          <span className="eyebrow">THE PERSONAL ARCHIVE</span>
           <span className="handwritten project-note">life lately <span aria-hidden="true">✳</span></span>
         </div>
         <div className="section-heading">
