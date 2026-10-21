@@ -201,7 +201,7 @@ export const highlights: Highlight[] = [
     detail: 'As a Notion Campus Leader I hosted the "Get Your Semester Together with Notion" workshop at TU Dublin, helping students set up their studies, projects and plans in Notion.',
     images: [assetUrl(notionWorkshop)],
     imageAlt: 'Presenting the Get Your Semester Together with Notion workshop at TU Dublin',
-    imagePosition: 'center 22%',
+    imagePosition: 'center 18%',
     post: 'https://lnkd.in/p/dZwp4XwU',
   },
   {
