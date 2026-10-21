@@ -4,6 +4,12 @@ import crescendImage from '@/assets/crescend-phones.png.asset.json';
 import bloomsImage from '@/assets/eternal-blooms-tablet.png.asset.json';
 import bloomsScreen from '@/assets/eternal-blooms-dashboard.png.asset.json';
 import headshot from '@/assets/lea-headshot.jpg.asset.json';
+import notionHackathon from '@/assets/notion-hackathon.png.asset.json';
+import notionWorkshop from '@/assets/notion-workshop.png.asset.json';
+import aiwomenHackathon from '@/assets/aiwomen-hackathon.png.asset.json';
+import pressureCookerTeam from '@/assets/pressure-cooker-team.png.asset.json';
+import pressureCookerCrowd from '@/assets/pressure-cooker-crowd.png.asset.json';
+import dublinAiWeek from '@/assets/dublin-ai-week.png.asset.json';
 
 // Absolute asset origin keeps uploaded media available on GitHub Pages too.
 export const assetUrl = (asset: { url: string }) => `https://id-preview--f1d34c87-7893-4453-8c52-da3e4693d0a0.lovable.app${asset.url}`;
@@ -143,7 +149,7 @@ export type HighlightCategory = 'Hackathons' | 'Community' | 'Building' | 'Learn
 
 export type Highlight = {
   category: HighlightCategory; date?: string; title: string; note: string;
-  detail?: string; image?: string; imageAlt?: string; projectSlug?: string; featured?: boolean;
+  detail?: string; images?: string[]; imageAlt?: string; projectSlug?: string; featured?: boolean;
 };
 
 export const highlights: Highlight[] = [
@@ -151,12 +157,15 @@ export const highlights: Highlight[] = [
     category: 'Hackathons', date: '2026', title: 'AI.WOMEN Hackathon 2026', featured: true,
     note: 'Built the backend and AI pipeline for PropertyScan as part of a team, receiving second place for Best Use of Google Cloud.',
     detail: 'A team of five built PropertyScan, an AI-powered property due diligence tool, in a single hackathon. I focused on backend development and the AI pipeline: document extraction, evidence validation and the deterministic cross-document rule engine. The project took second place for Best Use of Google Cloud.',
+    images: [assetUrl(aiwomenHackathon)], imageAlt: 'The PropertyScan team on stage at the AI.WOMEN Hackathon 2026, receiving second place for Best Use of Google Cloud',
     projectSlug: 'propertyscan',
   },
   {
     category: 'Community', date: '2026 – Present', title: 'Notion Campus Leader',
     note: 'Helping build and connect the student technology community at TU Dublin, including a Dublin AI Week hackathon for approximately 100 participants.',
-    detail: 'As a Notion Campus Leader I organise and support student technology initiatives at TU Dublin, including involvement in a Dublin AI Week hackathon that brought together approximately 100 participants.',
+    detail: 'As a Notion Campus Leader I organise and support student technology initiatives at TU Dublin: running a Notion hackathon, hosting the "Get Your Semester Together with Notion" workshop and helping with a Dublin AI Week hackathon that brought together approximately 100 participants.',
+    images: [assetUrl(notionHackathon), assetUrl(notionWorkshop), assetUrl(dublinAiWeek)],
+    imageAlt: 'Handing out Notion tote bags at the Notion hackathon at TU Dublin',
   },
   {
     category: 'Community', date: '2026 – Present', title: 'Hackathon Hub Ambassador',
@@ -167,6 +176,8 @@ export const highlights: Highlight[] = [
     category: 'Building', date: '2026', title: 'Crescend · Pressure Cooker 2026',
     note: 'Collaborated on a music-driven social discovery concept, contributing to design, prototyping and product development. The landing page attracted 108 waitlist sign-ups.',
     detail: 'Developed as part of the Pressure Cooker 2026 experience in Dublin. I contributed to UX/UI design, interactive prototyping and collaborative product development. The landing page has attracted 108 waitlist sign-ups so far.',
+    images: [assetUrl(pressureCookerTeam), assetUrl(pressureCookerCrowd)],
+    imageAlt: 'Working with the team during the Pressure Cooker 2026 experience in Dublin',
     projectSlug: 'crescend',
   },
   {
@@ -174,6 +185,11 @@ export const highlights: Highlight[] = [
     note: 'Building a digital management application that translates real independent-florist business needs into software.',
     detail: 'Florist Studio brings pricing, orders, inventory, events, invoicing and loyalty into one installable workspace for independent florists, inspired by real floristry business workflows.',
     projectSlug: 'eternal-blooms',
+  },
+  {
+    category: 'Learning', date: '2026', title: 'Pure Accelerate, London',
+    note: 'Attended the Pure Accelerate conference in London, exploring data storage, cloud infrastructure and enterprise technology.',
+    detail: 'Attended the Pure Accelerate conference in London, learning about data storage, cloud infrastructure and how enterprise technology is evolving.',
   },
   {
     category: 'Learning', title: 'Learning & exploring',

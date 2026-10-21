@@ -70,9 +70,9 @@ export default function UpToSection() {
                 className={`archive-card${highlight.featured ? ' archive-card-featured' : ''}${highlight.category === 'Next Chapter' ? ' archive-card-future' : ''}`}
                 onClick={() => setOpen(highlight)}
                 aria-haspopup="dialog">
-                {highlight.image && (
+                {highlight.images && highlight.images.length > 0 && (
                   <span className="archive-photo">
-                    <img src={highlight.image} alt={highlight.imageAlt ?? ''} loading="lazy" />
+                    <img src={highlight.images[0]} alt={highlight.imageAlt ?? ''} loading="lazy" />
                   </span>
                 )}
                 <span className="archive-top">
@@ -114,9 +114,13 @@ export default function UpToSection() {
                 {open.date && <span className="archive-date">{open.date}</span>}
               </div>
               <h3>{open.title}</h3>
-              {open.image && (
-                <span className="archive-photo archive-photo-dialog">
-                  <img src={open.image} alt={open.imageAlt ?? ''} />
+              {open.images && open.images.length > 0 && (
+                <span className={`archive-photos${open.images.length > 1 ? ' archive-photos-multi' : ''}`}>
+                  {open.images.map((src, i) => (
+                    <span key={src} className="archive-photo">
+                      <img src={src} alt={i === 0 ? open.imageAlt ?? '' : ''} loading="lazy" />
+                    </span>
+                  ))}
                 </span>
               )}
               <p>{open.detail ?? open.note}</p>
