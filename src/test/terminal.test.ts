@@ -6,6 +6,16 @@ describe('Portfolio interactions', () => {
     for (const theme of ['light', 'dark', 'pastel']) expect(runCommand(`theme ${theme}`).theme).toBe(theme);
     expect(runCommand('theme invalid').theme).toBeUndefined();
   });
+  it('accepts theme names on their own, including pastel from the screenshot', () => {
+    expect(runCommand('pastel').theme).toBe('pastel');
+    expect(runCommand('light').theme).toBe('light');
+    expect(runCommand('dark').theme).toBe('dark');
+    expect(runCommand(' PASTEL ').theme).toBe('pastel');
+  });
+  it('accepts the singular project command from the screenshot', () => {
+    expect(runCommand('project')).toEqual(runCommand('projects'));
+    expect(runCommand('project').text).toContain('propertyscan');
+  });
   it('opens each primary project on a refresh-safe root URL', () => {
     expect(runCommand('open propertyscan').destination).toBe('/?project=propertyscan');
     expect(runCommand('open crescend').destination).toBe('/?project=crescend');

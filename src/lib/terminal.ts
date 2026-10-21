@@ -8,15 +8,19 @@ export function runCommand(input: string): TerminalResult {
     case 'help': return { text: 'about          A little about me\nprojects       Explore my projects\nopen <name>    propertyscan, crescend, eternal-blooms\nskills         My technical toolkit\ncontact        Say hello\ntheme <name>   light, dark, pastel\nclear          A fresh start' };
     case 'about': return { text: "I'm Lea Stan, a Data Science & AI student at TU Dublin. I work across product analytics and app operations at Trace, and love turning ideas into useful products." };
     case 'skills': return { text: skills.join(' · ') };
+    case 'project':
     case 'projects': return { text: featuredProjects.map(p => `${p.slug.padEnd(18)} ${p.summary}`).join('\n') };
     case 'open': {
       const project = featuredProjects.find(p => p.slug === args.join('-'));
       return project ? { text: `Opening ${project.name}…`, destination: `/?project=${project.slug}` } : { text: 'Choose propertyscan, crescend or eternal-blooms.' };
     }
     case 'contact': return { text: 'Email: leastan5757@gmail.com\nGitHub: github.com/bytelea\nLinkedIn: linkedin.com/in/lea-stanisavljevic', destination: '/#contact' };
+    case 'light':
+    case 'dark':
+    case 'pastel':
     case 'theme': {
-      const theme = themes.find(t => t === args[0]);
-      return theme ? { text: `Theme set to ${theme}.`, theme } : { text: 'Choose light, dark or pastel.' };
+      const theme = themes.find(t => t === (command === 'theme' ? args[0] : command));
+      return theme ? { text: `Theme set to ${theme}.`, theme } : { text: 'Type light, dark or pastel, or use theme pastel.' };
     }
     case 'clear': return { text: '', clear: true };
     case '': return { text: '' };
