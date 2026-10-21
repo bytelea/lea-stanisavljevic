@@ -5,7 +5,7 @@ import bloomsImage from '@/assets/eternal-blooms-tablet.png.asset.json';
 import bloomsScreen from '@/assets/eternal-blooms-dashboard.png.asset.json';
 
 // Absolute asset origin keeps uploaded media available on GitHub Pages too.
-export const assetUrl = (asset: { url: string }) => `https://lea-ai-folio.lovable.app${asset.url}`;
+export const assetUrl = (asset: { url: string }) => `https://id-preview--f1d34c87-7893-4453-8c52-da3e4693d0a0.lovable.app${asset.url}`;
 export const featuredProjects = [
   {
     slug: 'propertyscan', name: 'PropertyScan', category: 'AI · PROPERTY DUE DILIGENCE',
