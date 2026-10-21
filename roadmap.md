@@ -65,3 +65,9 @@
 - [x] Lower the Get Your Semester Together with Notion card photo slightly, keeping both people in frame (crop center 10% -> 18%)
 - [x] Refresh and tidy the deployable docs copy; verified it renders with both heads visible and no failed requests
 - [x] Push changes to GitHub: work is committed on the synced branch and reaches the repository through Lovable's Git sync
+
+## Flower brand mark (22 Oct)
+- [x] Draw a simple five-petal lavender flower as the site's mark (src/assets/flower.svg)
+- [x] Use it as the favicon (svg, png 64, png 96, apple-touch-icon on ivory) and drop the old star-era icon files
+- [x] Replace the star beside the top-left name with the same flower, readable in light and dark
+- [x] Verify in the preview and the deployable copy, rebuild docs, and push through Git sync
