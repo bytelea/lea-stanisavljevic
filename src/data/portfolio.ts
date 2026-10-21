@@ -200,6 +200,7 @@ export const highlights: Highlight[] = [
     images: [assetUrl(notionWorkshop)],
     imageAlt: 'Presenting the Get Your Semester Together with Notion workshop at TU Dublin',
     imagePosition: 'center 45%',
+    post: 'https://www.linkedin.com/posts/lea-stanisavljevic_notion-notioncampusleaders-tudublin-activity-7511452978936090624-R1CM',
   },
   {
     category: 'Community', date: '2026', title: 'Dublin AI Week',
@@ -207,6 +208,7 @@ export const highlights: Highlight[] = [
     detail: 'As a Notion Campus Leader I was involved in organising a Dublin AI Week hackathon that brought together approximately 100 participants to build with AI.',
     images: [assetUrl(pressureCookerCrowd)],
     imageAlt: 'A packed Dublin AI Week session with attendees wearing Dublin AI Week t-shirts',
+    post: 'https://www.linkedin.com/posts/lea-stanisavljevic_notionlovesdublin-dublinaiweek-hackathon-activity-7514674172241883136-Hv0G',
   },
   {
     category: 'Community', date: '2026 – Present', title: 'Hackathon Hub Ambassador',

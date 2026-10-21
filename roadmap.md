@@ -43,8 +43,9 @@
 - [x] Remove the SAP "Next Chapter" card from Beyond the Screen (kept in Experience)
 
 ## About, education and archive adjustments (22 Oct)
-- [ ] Bring About columns closer together and place education dates beneath course names
-- [ ] Remove Florist Studio from the archive and Dublin AI Week's second photo
-- [ ] Shift AI.WOMEN crop right and lower both Notion crops
-- [ ] Link verified LinkedIn posts to archive stories; request any unavailable post URLs
+- [x] Bring About columns closer together and place education dates beneath course names
+- [x] Remove Florist Studio from the archive and Dublin AI Week's second photo
+- [x] Shift AI.WOMEN crop right and lower both Notion crops
+- [x] Link six verified LinkedIn posts to archive stories
+- [ ] Remaining post links: awaiting user URLs for AI.WOMEN, Notion Hackathon, Hackathon Hub Ambassador, Pressure Cooker and Pure Accelerate (and Learning & exploring if applicable)
 - [ ] Verify layout and archive stories
