@@ -139,14 +139,50 @@ export const leadership = [
   { title: 'Hackathon Hub Ambassador', period: 'August 2026 – Present', note: 'Promoting hackathons and technology events to students across Ireland, connecting university communities with opportunities to build.' },
 ];
 
-export type Highlight = { label: string; date?: string; title: string; note: string; projectSlug?: string };
+export type HighlightCategory = 'Hackathons' | 'Community' | 'Building' | 'Learning' | 'Next Chapter';
+
+export type Highlight = {
+  category: HighlightCategory; date?: string; title: string; note: string;
+  detail?: string; image?: string; imageAlt?: string; projectSlug?: string; featured?: boolean;
+};
 
 export const highlights: Highlight[] = [
-  { label: 'Hackathon', date: '2026', title: 'AI.WOMEN Hackathon 2026', note: 'Built the backend and AI pipeline for PropertyScan as part of a team, receiving second place for Best Use of Google Cloud.', projectSlug: 'propertyscan' },
-  { label: 'Community', date: '2026 – Present', title: 'Notion Campus Leader', note: 'Helping build and connect the student technology community at TU Dublin, including a Dublin AI Week hackathon for approximately 100 participants.' },
-  { label: 'Community', date: '2026 – Present', title: 'Hackathon Hub Ambassador', note: 'Promoting hackathons, student innovation and opportunities for university students to collaborate and build.' },
-  { label: 'Product', date: '2026', title: 'Crescend · Pressure Cooker 2026', note: 'Collaborated on a music-driven social discovery concept, contributing to design, prototyping and product development. The landing page attracted 108 waitlist sign-ups.', projectSlug: 'crescend' },
-  { label: 'Building', title: 'Florist Studio', note: 'Building a digital management application that translates real independent-florist business needs into software.', projectSlug: 'eternal-blooms' },
-  { label: 'Learning', title: 'Learning & exploring', note: 'Developing skills in AI, software engineering, cloud technology and data analytics through university projects, independent development, DataCamp and IBM SkillsBuild training.' },
-  { label: 'Up next', date: 'February 2027', title: "What's next: SAP", note: 'Preparing to join SAP as an incoming iXp Technical Support Engineer Intern in February 2027.' },
+  {
+    category: 'Hackathons', date: '2026', title: 'AI.WOMEN Hackathon 2026', featured: true,
+    note: 'Built the backend and AI pipeline for PropertyScan as part of a team, receiving second place for Best Use of Google Cloud.',
+    detail: 'A team of five built PropertyScan, an AI-powered property due diligence tool, in a single hackathon. I focused on backend development and the AI pipeline: document extraction, evidence validation and the deterministic cross-document rule engine. The project took second place for Best Use of Google Cloud.',
+    projectSlug: 'propertyscan',
+  },
+  {
+    category: 'Community', date: '2026 – Present', title: 'Notion Campus Leader',
+    note: 'Helping build and connect the student technology community at TU Dublin, including a Dublin AI Week hackathon for approximately 100 participants.',
+    detail: 'As a Notion Campus Leader I organise and support student technology initiatives at TU Dublin, including involvement in a Dublin AI Week hackathon that brought together approximately 100 participants.',
+  },
+  {
+    category: 'Community', date: '2026 – Present', title: 'Hackathon Hub Ambassador',
+    note: 'Promoting hackathons, student innovation and opportunities for university students to collaborate and build.',
+    detail: 'As a Hackathon Hub Ambassador I help students discover hackathons and opportunities to collaborate, connecting university communities across Ireland with chances to build.',
+  },
+  {
+    category: 'Building', date: '2026', title: 'Crescend · Pressure Cooker 2026',
+    note: 'Collaborated on a music-driven social discovery concept, contributing to design, prototyping and product development. The landing page attracted 108 waitlist sign-ups.',
+    detail: 'Developed as part of the Pressure Cooker 2026 experience in Dublin. I contributed to UX/UI design, interactive prototyping and collaborative product development. The landing page has attracted 108 waitlist sign-ups so far.',
+    projectSlug: 'crescend',
+  },
+  {
+    category: 'Building', title: 'Florist Studio',
+    note: 'Building a digital management application that translates real independent-florist business needs into software.',
+    detail: 'Florist Studio brings pricing, orders, inventory, events, invoicing and loyalty into one installable workspace for independent florists, inspired by real floristry business workflows.',
+    projectSlug: 'eternal-blooms',
+  },
+  {
+    category: 'Learning', title: 'Learning & exploring',
+    note: 'Developing skills in AI, software engineering, cloud technology and data analytics through university projects, independent development, DataCamp and IBM SkillsBuild training.',
+    detail: 'Alongside my degree, I keep learning through university projects, independent development and structured training on DataCamp and IBM SkillsBuild, across AI, software engineering, cloud technology and data analytics.',
+  },
+  {
+    category: 'Next Chapter', date: 'February 2027', title: "What's next: SAP",
+    note: 'Preparing to join SAP as an incoming iXp Technical Support Engineer Intern in February 2027.',
+    detail: 'A confirmed next step: in February 2027 I join SAP as an iXp Technical Support Engineer Intern.',
+  },
 ];
