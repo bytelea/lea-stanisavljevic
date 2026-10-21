@@ -1,11 +1,14 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight, ExternalLink, Github } from "lucide-react";
-import hcdCover from "@/assets/hcd-cover.jpg";
-import analyticsCover from "@/assets/analytics-cover.jpg";
-import infobipCover from "@/assets/infobip-cover.jpg";
-import algorithmsCover from "@/assets/algorithms-cover.jpg";
-import statisticsCover from "@/assets/statistics-cover.jpg";
+import hcdCover from "@/assets/research-editorial-cover.jpg";
+import analyticsCover from "@/assets/analytics-editorial-cover.jpg";
+import infobipCover from "@/assets/infobip-editorial-cover.jpg";
+import algorithmsCover from "@/assets/algorithms-editorial-cover.jpg";
+import statisticsCover from "@/assets/statistics-editorial-cover.jpg";
+
+// Public document origin avoids the preview's blocked new-tab address.
+const documentUrl = (path: string) => new URL(path, "https://www.leastan.com").href;
 
 const projects = [
   {
@@ -227,9 +230,9 @@ const ProjectsSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 1.2 + i * 0.2 }}
             >
-              <a href={project.pdf} target="_blank" rel="noopener noreferrer" className="featured-card report-card group">
+              <a href={documentUrl(project.pdf)} target="_blank" rel="noopener noreferrer" className="featured-card report-card group">
                 <div className="featured-image">
-                  <img src={project.cover} alt={`${project.title} abstract cover`} loading="lazy" />
+                  <img src={project.cover} alt={`${project.title} paper collage cover`} loading="lazy" width={1536} height={1024} />
                   <span className="image-arrow"><ArrowUpRight size={20} /></span>
                 </div>
                 <div className="featured-body">
