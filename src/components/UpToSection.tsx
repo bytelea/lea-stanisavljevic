@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRight, X } from 'lucide-react';
 import { highlights, type Highlight, type HighlightCategory } from '@/data/portfolio';
 
-const filters: Array<'All' | HighlightCategory> = ['All', 'Hackathons', 'Community', 'Building', 'Learning', 'Next Chapter'];
+const filters: Array<'All' | HighlightCategory> = ['All', 'Hackathons', 'Community', 'Building', 'Learning'];
 
 export default function UpToSection() {
   const ref = useRef(null);
@@ -71,7 +71,7 @@ export default function UpToSection() {
                 layout={!reduceMotion}
                 {...rise(0.05 * i)}
                 exit={reduceMotion ? {} : { opacity: 0, y: 12 }}
-                className={`archive-card${hasPhoto(highlight) ? ' archive-card-photo' : ' archive-card-text'}${highlight.category === 'Next Chapter' ? ' archive-card-future' : ''}`}
+                className={`archive-card${hasPhoto(highlight) ? ' archive-card-photo' : ' archive-card-text'}`}
                 onClick={() => setOpen(highlight)}
                 aria-haspopup="dialog">
                 {highlight.images && highlight.images.length > 0 && (
@@ -148,6 +148,11 @@ export default function UpToSection() {
                 <Link to={`/?project=${open.projectSlug}`} className="archive-case-link" onClick={() => setOpen(null)}>
                   See the project case study <ArrowUpRight size={14} aria-hidden="true" />
                 </Link>
+              )}
+              {open.post && (
+                <a href={open.post} target="_blank" rel="noreferrer noopener" className="archive-case-link">
+                  Read the LinkedIn post <ArrowUpRight size={14} aria-hidden="true" />
+                </a>
               )}
             </motion.div>
           </motion.div>
