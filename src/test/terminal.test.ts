@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { runCommand } from '@/lib/terminal';
+import { runCommand, themes } from '@/lib/terminal';
 import { featuredProjects } from '@/data/portfolio';
 describe('Portfolio interactions', () => {
   it('supports light and dark themes only', () => {
